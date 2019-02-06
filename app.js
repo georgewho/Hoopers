@@ -36,6 +36,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.get('/', home.view);
 app.get('/home', home.view);
 app.get('/mystats', mystats.view);
 // Example route

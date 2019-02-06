@@ -1,7 +1,12 @@
+h2,h1,h3,h4,h5,h6,p{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* all stats table */
 table#dottedtable {
     border-collapse: collapse;
     width:95%;
+    font-family: 'Montserrat', sans-serif;
   }
 
 table#dottedtable td, table#dottedtable th {
@@ -30,6 +35,7 @@ table#linedtable{
     border-collapse: collapse;
     width:100%;
     table-layout: fixed;
+    font-family: 'Montserrat', sans-serif;
 }
 table#linedtable th, table#linedtable td {
     border: 1px solid black;
