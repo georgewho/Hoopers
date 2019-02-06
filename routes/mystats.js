@@ -1,6 +1,6 @@
 
 /*
- * GET home page.
+ * GET mystats page.
  */
 
 exports.view = function(req, res){
