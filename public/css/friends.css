@@ -30,3 +30,7 @@ body {
     color: black;
     font-size: 1.75rem;
 }
+
+.fa-plus:before {
+    padding-right: 30px;
+}

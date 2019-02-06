@@ -36,6 +36,10 @@ body {
     font-size: 1.75rem;
 }
 
+.fa-plus:before {
+    padding-right: 30px;
+}
+
 /* all stats table */
 table#dottedtable {
     border-collapse: collapse;
