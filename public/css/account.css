@@ -1,5 +1,5 @@
 body {
-  padding-top: 65px;
+  padding-top: 75px;
 }
 
 .fa-search:before {
@@ -24,4 +24,14 @@ body {
 
 .navbar {
   padding-right: 1px;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 1.75rem;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 1.75rem;
 }

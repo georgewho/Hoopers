@@ -3,7 +3,7 @@ h2,h1,h3,h4,h5,h6,p{
 }
 body {
     overscroll-behavior-y: none;
-    padding-top: 65px;
+    padding-top: 75px;
 }
 
 /*nav bar elements*/
@@ -29,6 +29,11 @@ body {
 
 .navbar {
   padding-right: 1px;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 1.75rem;
 }
 
 /* all stats table */
