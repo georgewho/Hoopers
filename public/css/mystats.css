@@ -3,6 +3,7 @@ h2,h1,h3,h4,h5,h6,p{
 }
 body {
     overscroll-behavior-y: none;
+    padding-top: 65px;
 }
 
 /* all stats table */

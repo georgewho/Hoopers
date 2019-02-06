@@ -4,3 +4,7 @@
 @media only screen and (max-device-width: 480px) {
 
 }
+
+body {
+  padding-top: 65px;
+}
