@@ -1,0 +1,43 @@
+/* all stats table */
+table#dottedtable {
+    border-collapse: collapse;
+    width:95%;
+  }
+
+table#dottedtable td, table#dottedtable th {
+border: 1px dashed black;
+text-align:center;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+table#dottedtable tr:first-child th {
+border-top: 0;
+}
+table#dottedtable tr:last-child td {
+border-bottom: 0;
+}
+table#dottedtable tr td:first-child,
+table#dottedtable tr th:first-child {
+border-left: 0;
+}
+table#dottedtable tr td:last-child,
+table#dottedtable tr th:last-child {
+border-right: 0;
+}
+
+/*per games table*/
+table#linedtable{
+    border-collapse: collapse;
+    width:100%;
+    table-layout: fixed;
+}
+table#linedtable th, table#linedtable td {
+    border: 1px solid black;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+}
