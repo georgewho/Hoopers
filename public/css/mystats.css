@@ -27,6 +27,10 @@ body {
   padding-left: 21px;
 }
 
+.navbar {
+  padding-right: 1px;
+}
+
 /* all stats table */
 table#dottedtable {
     border-collapse: collapse;

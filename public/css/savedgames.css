@@ -21,3 +21,7 @@ body {
 .fa-user-circle:before {
   padding-left: 21px;
 }
+
+.navbar {
+  padding-right: 1px;
+}
