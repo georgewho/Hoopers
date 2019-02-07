@@ -14,6 +14,7 @@ var mystats = require('./routes/mystats');
 var friends = require('./routes/friends');
 var account = require('./routes/account');
 var addstats = require('./routes/addstats');
+var viewgames = require('./routes/viewgames')
 
 // Example route
 // var user = require('./routes/user');
@@ -47,6 +48,7 @@ app.get('/savedgames',savedgames.view);
 app.get('/friends', friends.view);
 app.get('/account', account.view);
 app.get('/addstats', addstats.view);
+app.get('/viewgames', viewgames.view)
 // Example route
 // app.get('/users', user.list);
 

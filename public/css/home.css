@@ -41,3 +41,13 @@ body {
 .fa-plus:before {
     padding-right: 30px;
 }
+
+h3 b {
+  font-size: 1.0rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  padding: 5px;
+  width: 400px;
+}
