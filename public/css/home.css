@@ -51,3 +51,10 @@ img {
   padding: 5px;
   width: 400px;
 }
+
+.game {
+  box-shadow: 0 8px 6px -6px black;
+  overflow: hidden;
+  color: black;
+  margin-top: 10px;
+}
