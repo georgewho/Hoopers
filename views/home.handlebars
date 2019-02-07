@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!-- header -->
+    <!-- header/nav bar top -->
 		<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
 			<div class="navbar-collapse collapse" id="headerText">
 				<span class="navbar-brand">
@@ -34,13 +34,13 @@
 			</div>
 		</nav>
 
-    <!-- nav -->
+    <!-- nav bar bottom -->
 		<div class="container">
 		<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
 			<div class="navbar-collapse collapse justify-content-center" id="homeNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="."><i class="fas fa-map-marker-alt"></i> Find</a>
+                <a class="nav-link active" href="."><i class="fas fa-search"></i> Find</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/savedgames"><i class="fas fa-list-ul"></i> Games</a>
@@ -59,17 +59,36 @@
 		</nav>
 	  </div>
 
+
     <!-- game listings -->
-    <div class = "container-fluid gamelist">
-        <div class = "game1">
-            <h3>Hoopy Game</h3>
-            <h5>Thursday, 2/15/19 @ 1:00PM</h5>
-        </div>
-         <div class = "game2">
-            <h3>Pro Game</h3>
-            <h5></h5>
-        </div>
-    </div>
+		<div class = "container-fluid gamelist">
+			<a href="/viewgames">
+				<div class = "game" id="game1">
+					<h3>Hoop With Me &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <h5>0.4 mi</b></h5>
+					<h5>4:00 PM 2/15/19</h5>
+					<h5>Beginner &emsp; 4v4</h5>
+					<img src="/images/game1.png" alt="game1">
+				</div>
+			</a>
+			<a href="/viewgames">
+				<div class = "game" id="game2">
+					<h3>Pro Game &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <h5>1.2 mi</b></h5>
+						<h5>10:00 PM 2/15/19</h5>
+						<h5>Advanced &nbsp&nbsp 10v10</h5>
+						<img src="/images/game2.png" alt="game2">
+						<h5></h5>
+					</div>
+				</a>
+			<a href="/viewgames">
+				<div class = "game" id="game3">
+					<h3>Chilling &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <h5>3.2 mi</h5></h3>
+					<h5>10:30 AM 2/16/19</h5>
+					<h5>Intermediate Unlimited</h5>
+					<img src="/images/game2.png" alt="game3">
+				</div>
+			</a>
+		</div>
+
 	<!--JS Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

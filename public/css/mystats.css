@@ -7,8 +7,8 @@ body {
 }
 
 /*nav bar elements*/
-.fa-map-marker-alt:before {
-  padding-left: 11px;
+.fa-search:before {
+  padding-left: 8px;
 }
 
 .fa-list-ul:before {

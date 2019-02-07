@@ -9,8 +9,8 @@ body {
   padding-top: 75px;
 }
 
-.fa-map-marker-alt:before {
-  padding-left: 11px;
+.fa-search:before {
+  padding-left: 8px;
 }
 
 .fa-list-ul:before {
@@ -40,4 +40,21 @@ body {
 
 .fa-plus:before {
     padding-right: 30px;
+}
+
+h3 b {
+  font-size: 1.0rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  padding: 5px;
+  width: 400px;
+}
+
+.game {
+  box-shadow: 0 8px 6px -6px black;
+  overflow: hidden;
+  color: black;
+  margin-top: 10px;
 }
