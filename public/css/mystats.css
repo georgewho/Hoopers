@@ -81,6 +81,9 @@ table#linedtable th, table#linedtable td {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.pergame{
+  padding-bottom:100px;
+}
 
 @media only screen and (max-device-width: 480px) {
 

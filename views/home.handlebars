@@ -5,7 +5,7 @@
 <head>
 	<title>Find Games - Hoopers</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 	 <!-- jQuery -->
 
@@ -48,12 +48,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="/mystats"><i class="far fa-chart-bar"></i> Stats</a>
             </li>
-						<li class="nav-item">
-								<a class="nav-link" href="/friends"><i class="fas fa-user-friends"></i> Friends</a>
-						</li>
-						<li class="nav-item">
-								<a class="nav-link" href="/account"><i class="far fa-user-circle"></i> Account</a>
-						</li>
+			<li class="nav-item">
+					<a class="nav-link" href="/friends"><i class="fas fa-user-friends"></i> Friends</a>
+			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="/account"><i class="far fa-user-circle"></i> Account</a>
+			</li>
         </ul>
     </div>
 		</nav>
@@ -62,28 +62,51 @@
 
     <!-- game listings -->
 		<div class = "container-fluid gamelist">
+
 			<a href="/viewgames">
 				<div class = "game" id="game1">
-					<h3>Hoop With Me &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <h5>0.4 mi</b></h5>
-					<h5>4:00 PM 2/15/19</h5>
+					<div class="row">
+						<div class="col-8">
+							<h3 class = "gamename">Hoop With Me </h3>
+						</div>
+						<div class="col-4"> 
+							<h5 class ="distance">0.4 mi</h5>
+						</div>
+					</div>
+					<h5>4:00 PM &emsp; 2/15/19</h5>
 					<h5>Beginner &emsp; 4v4</h5>
 					<img src="/images/game1.png" alt="game1">
 				</div>
 			</a>
+
 			<a href="/viewgames">
 				<div class = "game" id="game2">
-					<h3>Pro Game &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <h5>1.2 mi</b></h5>
-						<h5>10:00 PM 2/15/19</h5>
-						<h5>Advanced &nbsp&nbsp 10v10</h5>
-						<img src="/images/game2.png" alt="game2">
-						<h5></h5>
+					<div class="row">
+						<div class="col-8">
+							<h3 class = "gamename">Pro Game </h3>
+						</div>
+						<div class="col-4"> 
+							<h5 class ="distance">1.2 mi</h5>
+						</div>
 					</div>
-				</a>
+					<h5>10:00 PM &emsp; 2/15/19</h5>
+					<h5>Advanced &emsp; 10v10</h5>
+					<img src="/images/game2.png" alt="game2">
+				</div>
+			</a>
+
 			<a href="/viewgames">
 				<div class = "game" id="game3">
-					<h3>Chilling &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <h5>3.2 mi</h5></h3>
-					<h5>10:30 AM 2/16/19</h5>
-					<h5>Intermediate Unlimited</h5>
+					<div class="row">
+						<div class="col-8">
+							<h3 class = "gamename">Chilling </h3>
+						</div>
+						<div class="col-4"> 
+							<h5 class ="distance">3.2 mi</h5>
+						</div>
+					</div>
+					<h5>10:30 AM &emsp; 2/16/19</h5>
+					<h5>Intermediate &emsp; Unlimited</h5>
 					<img src="/images/game2.png" alt="game3">
 				</div>
 			</a>

@@ -1,14 +1,19 @@
 
-
-
-@media only screen and (max-device-width: 480px) {
-
+h2,h1,h3,h4,h5,h6,p{
+  font-family: 'Montserrat', sans-serif;
 }
-
+h3 b{
+  /*font-size: 1.0rem;*/
+  font-family: 'Montserrat', sans-serif;
+}
 body {
-  padding-top: 75px;
+  padding-top: 60px;
+  overscroll-behavior-y: none;
 }
-
+col{
+  min-height: 1px;
+}
+/* navbar*/
 .fa-search:before {
   padding-left: 8px;
 }
@@ -42,10 +47,9 @@ body {
     padding-right: 30px;
 }
 
-h3 b {
-  font-size: 1.0rem;
-  font-family: "Times New Roman", Times, serif;
-}
+/*game listings*/
+
+
 
 img {
   padding: 5px;
@@ -54,7 +58,18 @@ img {
 
 .game {
   box-shadow: 0 8px 6px -6px black;
+  padding-top:25px;
   overflow: hidden;
   color: black;
-  margin-top: 10px;
+}
+
+.gamelist{
+  padding-bottom:100px;
+}
+
+.distance{
+  padding-top:5px;
+}
+@media only screen and (max-device-width: 480px) {
+
 }
