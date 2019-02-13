@@ -1,29 +1,5 @@
 body {
-  padding-top: 75px;
-}
-
-.fa-search:before {
-  padding-left: 8px;
-}
-
-.fa-list-ul:before {
-  padding-left: 19px;
-}
-
-.fa-chart-bar:before {
-  padding-left: 10px;
-}
-
-.fa-user-friends:before {
-  padding-left: 15px;
-}
-
-.fa-user-circle:before {
-  padding-left: 21px;
-}
-
-.navbar {
-  padding-right: 1px;
+    padding-top: 75px;
 }
 
 .navbar-light .navbar-brand {
