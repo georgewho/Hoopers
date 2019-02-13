@@ -7,14 +7,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 
-	 <!-- jQuery -->
+	<!-- jQuery -->
 
 	<!-- Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="/css/mystats.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<!-- JS -->
 
@@ -39,35 +41,37 @@
 
 	<!--navbar-->
 	<div class="container-fluid">
-	<nav class="navbar fixed-bottom navbar-expand navbar-light footer" style="background-color:#e8e8e8">
-		<div class="navbar-collapse collapse justify-content-center" id="homeNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-						<a class="nav-link" href="."><i class="fas fa-search"></i> Find</a>
-				</li>
-				<li class="nav-item">
+		<nav class="navbar fixed-bottom navbar-expand navbar-light footer" style="background-color:#e8e8e8">
+			<div class="navbar-collapse collapse justify-content-center" id="homeNav">
+				<ul class="navbar-nav">
+					<li class="nav-item text-center">
+						<a class="nav-link" href="."><i class="fas fa-map-marker-alt"></i> Find</a>
+					</li>
+					<li class="nav-item text-center">
 						<a class="nav-link" href="/savedgames"><i class="fas fa-list-ul"></i> Games</a>
-				</li>
-				<li class="nav-item">
+					</li>
+					<li class="nav-item text-center">
 						<a class="nav-link active" href="/mystats"><i class="far fa-chart-bar"></i> Stats</a>
-				</li>
-				<li class="nav-item">
+					</li>
+					<li class="nav-item text-center">
 						<a class="nav-link" href="/friends"><i class="fas fa-user-friends"></i> Friends</a>
-				</li>
-				<li class="nav-item">
+					</li>
+					<li class="nav-item text-center">
 						<a class="nav-link" href="/account"><i class="far fa-user-circle"></i> Account</a>
-				</li>
-			</ul>
-	</div>
-	</nav>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	</div>
 
 	<!--overall stats-->
 	<div class="container allstats">
 		<table class="allstatstable" id="dottedtable">
 			<thead>
-     			<tr>
-					<th><h5>Summary</h5></th>
+				<tr>
+					<th>
+						<h5>Summary</h5>
+					</th>
 					<th>G</th>
 					<th>PTS</th>
 					<th>TRB</th>
@@ -75,20 +79,24 @@
 				</tr>
 			</thead>
 			<tbody>
-			<tr>
-				<td><h5>Feb 2019</h5></td>
-				<td>39</td>
-				<td>29.3</td>
-				<td>5.1</td>
-				<td>5.4</td>
-			</tr>
-			<tr>
-				<td><h5>Career</h5></td>
-				<td>400</td>
-				<td>23.6</td>
-				<td>4.5</td>
-				<td>6.7</td>
-			</tr>
+				<tr>
+					<td>
+						<h5>Feb 2019</h5>
+					</td>
+					<td>39</td>
+					<td>29.3</td>
+					<td>5.1</td>
+					<td>5.4</td>
+				</tr>
+				<tr>
+					<td>
+						<h5>Career</h5>
+					</td>
+					<td>400</td>
+					<td>23.6</td>
+					<td>4.5</td>
+					<td>6.7</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -98,7 +106,7 @@
 		<h3>Per Game</h3>
 		<table class="pergametable" id="linedtable">
 			<thead>
-     			<tr>
+				<tr>
 					<th>Date</th>
 					<th>W/L</th>
 					<th>G</th>
@@ -181,8 +189,15 @@
 	</div>
 
 	<!--JS Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>

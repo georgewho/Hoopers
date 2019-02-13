@@ -1,75 +1,48 @@
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
 
-h2,h1,h3,h4,h5,h6,p{
-  font-family: 'Montserrat', sans-serif;
+h3 b {
+    /*font-size: 1.0rem;*/
+    font-family: 'Montserrat', sans-serif;
 }
-h3 b{
-  /*font-size: 1.0rem;*/
-  font-family: 'Montserrat', sans-serif;
-}
+
 body {
-  padding-top: 60px;
-  overscroll-behavior-y: none;
-}
-col{
-  min-height: 1px;
-}
-/* navbar*/
-.fa-search:before {
-  padding-left: 8px;
+    padding-top: 60px;
+    overscroll-behavior-y: none;
 }
 
-.fa-list-ul:before {
-  padding-left: 19px;
+col {
+    min-height: 1px;
 }
 
-.fa-chart-bar:before {
-  padding-left: 10px;
-}
-
-.fa-user-friends:before {
-  padding-left: 15px;
-}
-
-.fa-user-circle:before {
-  padding-left: 21px;
-}
-
-.navbar {
-  padding-right: 1px;
-}
-
-.navbar-light .navbar-brand {
-    color: black;
-    font-size: 1.75rem;
-}
-
-.fa-plus:before {
-    padding-right: 30px;
-}
 
 /*game listings*/
 
-
-
 img {
-  padding: 5px;
-  width: 400px;
+    padding: 5px;
+    width: 400px;
 }
 
 .game {
-  box-shadow: 0 8px 6px -6px black;
-  padding-top:25px;
-  overflow: hidden;
-  color: black;
+    box-shadow: 0 8px 6px -6px black;
+    padding-top: 25px;
+    overflow: hidden;
+    color: black;
 }
 
-.gamelist{
-  padding-bottom:100px;
+.gamelist {
+    padding-bottom: 100px;
 }
 
-.distance{
-  padding-top:5px;
+.distance {
+    padding-top: 5px;
 }
-@media only screen and (max-device-width: 480px) {
 
-}
+@media only screen and (max-device-width: 480px) {}
