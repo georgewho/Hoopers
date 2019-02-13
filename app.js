@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -14,7 +13,8 @@ var mystats = require('./routes/mystats');
 var friends = require('./routes/friends');
 var account = require('./routes/account');
 var addstats = require('./routes/addstats');
-var viewgames = require('./routes/viewgames')
+var viewgames = require('./routes/viewgames');
+var addgames = require('./routes/addgames');
 
 // Example route
 // var user = require('./routes/user');
@@ -38,20 +38,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+    app.use(express.errorHandler());
 }
 
 app.get('/', home.view);
 app.get('/home', home.view);
 app.get('/mystats', mystats.view);
-app.get('/savedgames',savedgames.view);
+app.get('/savedgames', savedgames.view);
 app.get('/friends', friends.view);
 app.get('/account', account.view);
 app.get('/addstats', addstats.view);
 app.get('/viewgames', viewgames.view)
+app.get('/addgames', addgames.view);
 // Example route
 // app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+http.createServer(app).listen(app.get('port'), function() {
+    console.log('Express server listening on port ' + app.get('port'));
 });
