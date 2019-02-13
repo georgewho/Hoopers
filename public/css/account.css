@@ -1,34 +1,25 @@
 body {
-  padding-top: 75px;
+    padding-top: 75px;
 }
 
-.fa-search:before {
-  padding-left: 8px;
+
+/*bottom navbar elements*/
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    line-height: 20px;
 }
 
-.fa-list-ul:before {
-  padding-left: 19px;
+.navbar-light .navbar-nav .nav-link {
+    line-height: 20px;
 }
 
-.fa-chart-bar:before {
-  padding-left: 10px;
-}
-
-.fa-user-friends:before {
-  padding-left: 15px;
-}
-
-.fa-user-circle:before {
-  padding-left: 21px;
-}
-
-.navbar {
-  padding-right: 1px;
-}
-
-.navbar-light .navbar-brand {
-    color: black;
-    font-size: 1.75rem;
+.fixed-bottom {
+    height: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .navbar-light .navbar-brand {
