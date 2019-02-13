@@ -79,7 +79,7 @@ table#dottedtable tr th:last-child {
 table#linedtable {
     border-collapse: collapse;
     width: 100%;
-    table-layout: fixed;
+    table-layout: auto;
     font-family: 'Montserrat', sans-serif;
 }
 

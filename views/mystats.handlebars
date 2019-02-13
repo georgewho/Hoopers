@@ -19,7 +19,6 @@
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<!-- JS -->
-
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
@@ -45,24 +44,25 @@
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link" href="."><div><i class="fas fa-map-marker-alt"></i></div>Find</a>
+						<a class="nav-link active" href="/home"><div><i class="fas fa-map-marker-alt"></i></div></a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/savedgames"><div><i class="fas fa-list-ul"></i></div>Games</a>
+						<a class="nav-link" href="/savedgames"><div><i class="fas fa-basketball-ball"></i></div></a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link active" href="/mystats"><div><i class="far fa-chart-bar"></i></div>Stats</a>
+						<a class="nav-link" href="/mystats"><div><i class="far fa-chart-bar"></i></div></a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/friends"><div><i class="fas fa-user-friends"></i></div>Friends</a>
+						<a class="nav-link" href="/friends"><div><i class="fas fa-user-friends"></i></div></a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div>Account</a>
+						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
 
 	<!--overall stats-->
 	<div class="container allstats">
@@ -119,7 +119,7 @@
 
 				{{#each stats}}
 				<tr>
-					<td style="font-weight: bolder;">{{date}}</td>
+					<td >{{date}}</td>
 					<td>{{result}}</td>
 					<td>{{goals}}</td>
 					<td>{{points}}</td>
@@ -198,6 +198,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
 		crossorigin="anonymous"></script>
+
 </body>
 
 </html>
