@@ -8,6 +8,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var home = require('./routes/home');
+var login = require('./routes/login');
 var savedgames = require('./routes/savedgames');
 var mystats = require('./routes/mystats');
 var friends = require('./routes/friends');
@@ -41,7 +42,7 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-app.get('/', home.view);
+app.get('/', login.view);
 app.get('/home', home.view);
 app.get('/mystats', mystats.view);
 app.get('/savedgames', savedgames.view);
