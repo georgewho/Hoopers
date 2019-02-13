@@ -13,10 +13,6 @@ body {
     padding-top: 75px;
 }
 
-.navbar {
-    padding-right: 1px;
-}
-
 .navbar-light .navbar-brand {
     color: black;
     font-size: 1.75rem;
