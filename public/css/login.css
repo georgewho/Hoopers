@@ -9,7 +9,9 @@ h6,
 p {
     font-family: 'Montserrat', sans-serif;
 }
-
+body {
+    overscroll-behavior-y: none;
+}
 /* Add padding to containers */
 .container {
   padding: 16px;
@@ -58,6 +60,7 @@ a {
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
+  margin-top:45%;
   background-color: #f1f1f1;
   text-align: center;
 }
