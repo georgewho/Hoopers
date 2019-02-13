@@ -1,0 +1,40 @@
+body {
+  padding-top: 75px;
+}
+h2,h1,h3,h4,h5,h6,p{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/*navbar*/
+.fa-search:before {
+  padding-left: 8px;
+}
+
+.fa-list-ul:before {
+  padding-left: 19px;
+}
+
+.fa-chart-bar:before {
+  padding-left: 10px;
+}
+
+.fa-user-friends:before {
+  padding-left: 15px;
+}
+
+.fa-user-circle:before {
+  padding-left: 21px;
+}
+
+.navbar {
+  padding-right: 1px;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 1.75rem;
+}
+
+.fa-plus:before {
+    padding-right: 30px;
+}
