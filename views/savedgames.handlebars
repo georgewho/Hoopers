@@ -35,7 +35,23 @@
 		</div>
 	</nav>
 
-	<p>Hello World! This will be the saved games page.</p>
+	<div class="container upcominggames">
+			<h3>Upcoming Games</h3>
+	</div>
+
+	<div class="container mygames">
+			<h3>Created Games</h3>
+
+			{{#each games}}
+			<div class="mygame" id="{{id}}">
+				<a href="/viewgames">
+        		<p>{{name}}</p>
+     			</a>
+  			  </div>
+			{{/each}}
+	</div>
+
+	
 
 	<!-- nav bar bottom -->
 	<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
