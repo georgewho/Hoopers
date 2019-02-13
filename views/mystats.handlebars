@@ -100,6 +100,7 @@
 			<thead>
      			<tr>
 					<th>Date</th>
+					<th>W/L</th>
 					<th>G</th>
 					<th>PTS</th>
 					<th>TRB</th>
@@ -107,55 +108,73 @@
 				</tr>
 			</thead>
 			<tbody>
+
+				{{#each stats}}
 				<tr>
-					<td>2/13</td>
+					<td style="font-weight: bolder;">{{date}}</td>
+					<td>{{result}}</td>
+					<td>{{goals}}</td>
+					<td>{{points}}</td>
+					<td>{{trebounds}}</td>
+					<td>{{assists}}</td>
+				</tr>
+				{{/each}}
+				<!--<tr>
+					<td style="font-weight: bolder;">2/13/19</td>
+					<td>W</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>2/07</td>
+					<td style="font-weight: bolder;">2/07</td>
+					<td>L</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>2/04</td>
+					<td style="font-weight: bolder;">2/04</td>
+					<td>W</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>1/26</td>
+					<td style="font-weight: bolder;">1/26</td>
+					<td>L</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>1/15</td>
+					<td style="font-weight: bolder;">1/15</td>
+					<td>W</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>1/12</td>
+					<td style="font-weight: bolder;">1/12</td>
+					<td>L</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
 				</tr>
 				<tr>
-					<td>1/02</td>
+					<td style="font-weight: bolder;">1/02</td>
+					<td>W</td>
 					<td>5</td>
 					<td>8</td>
 					<td>2</td>
 					<td>4</td>
-				</tr>
+				</tr>-->
 			</tbody>
 
 		</table>
