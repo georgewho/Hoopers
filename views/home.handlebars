@@ -23,7 +23,7 @@
 </head>
 
 <body>
-	<!-- header/nav bar top -->
+	<!-- header -->
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
 		<div class="navbar-collapse collapse" id="headerText">
 			<span class="navbar-brand">
@@ -31,26 +31,36 @@
 			</span>
 		</div>
 	</nav>
-
+	
 	<!-- nav bar bottom -->
 	<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
 		<div class="container">
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link active" href="/home"><div><i class="fas fa-map-marker-alt"></i></div></a>
+						<a class="nav-link active" href="/home">
+							<div><i class="fas fa-map-marker-alt"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/savedgames"><div><i class="fas fa-basketball-ball"></i></div></a>
+						<a class="nav-link" href="/savedgames">
+							<div><i class="fas fa-basketball-ball"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/mystats"><div><i class="far fa-chart-bar"></i></div></a>
+						<a class="nav-link" href="/mystats">
+							<div><i class="far fa-chart-bar"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/friends"><div><i class="fas fa-user-friends"></i></div></a>
+						<a class="nav-link" href="/friends">
+							<div><i class="fas fa-user-friends"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
+						<a class="nav-link" href="/account">
+							<div><i class="fas fa-user-circle"></i></div>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -60,54 +70,23 @@
 
 	<!-- game listings -->
 	<div class="container-fluid gamelist">
-
+		{{#each games}}
 		<a href="/viewgames">
-			<div class="game" id="game1">
+			<div class="game">
 				<div class="row">
 					<div class="col-8">
-						<h3 class="gamename">Hoop With Me </h3>
+						<h3 class="gamename">{{name}}</h3>
 					</div>
 					<div class="col-4">
-						<h5 class="distance">0.4 mi</h5>
+						<h5 class="distance">{{distance}}</h5>
 					</div>
 				</div>
-				<h5>4:00 PM &emsp; 2/15/19</h5>
-				<h5>Beginner &emsp; 4v4</h5>
-				<img src="/images/game1.png" alt="game1">
+				<h5>{{time}} &emsp; {{date}}</h5>
+				<h5>{{skill}} &emsp; {{players}}</h5>
+				<img src="images/{{map}}" alt="gamepic">
 			</div>
 		</a>
-
-		<a href="/viewgames">
-			<div class="game" id="game2">
-				<div class="row">
-					<div class="col-8">
-						<h3 class="gamename">Pro Game </h3>
-					</div>
-					<div class="col-4">
-						<h5 class="distance">1.2 mi</h5>
-					</div>
-				</div>
-				<h5>10:00 PM &emsp; 2/15/19</h5>
-				<h5>Advanced &emsp; 10v10</h5>
-				<img src="/images/game2.png" alt="game2">
-			</div>
-		</a>
-
-		<a href="/viewgames">
-			<div class="game" id="game3">
-				<div class="row">
-					<div class="col-8">
-						<h3 class="gamename">Chilling </h3>
-					</div>
-					<div class="col-4">
-						<h5 class="distance">3.2 mi</h5>
-					</div>
-				</div>
-				<h5>10:30 AM &emsp; 2/16/19</h5>
-				<h5>Intermediate &emsp; Unlimited</h5>
-				<img src="/images/game2.png" alt="game3">
-			</div>
-		</a>
+		{{/each}}
 	</div>
 
 	<!--JS Bootstrap -->

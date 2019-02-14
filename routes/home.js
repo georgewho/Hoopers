@@ -5,6 +5,7 @@ var data = require('../game.json');
  * GET home page.
  */
 
-exports.view = function(req, res){
-  res.render('home');
+exports.view = function(req, res) {
+    console.log(data);
+    res.render('home', data);
 };

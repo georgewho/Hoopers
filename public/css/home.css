@@ -14,7 +14,7 @@ h3 b {
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 50px;
     overscroll-behavior-y: none;
 }
 
@@ -23,18 +23,18 @@ col {
 }
 
 
+/*top navbar elements*/
+
+.fixed-top {
+    height: 67.6px;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+
 /*bottom navbar elements*/
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    line-height: 20px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    line-height: 20px;
-}
 
 .fixed-bottom {
     height: 50px;

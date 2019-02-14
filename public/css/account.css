@@ -5,17 +5,6 @@ body {
 
 /*bottom navbar elements*/
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    line-height: 20px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    line-height: 20px;
-}
-
 .fixed-bottom {
     height: 50px;
     padding-left: 0px;

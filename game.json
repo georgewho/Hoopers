@@ -1,13 +1,31 @@
 {
-    "games": [{ 
-        "name": "Game1",
-        "id": "game1"
-      },
-   
-      {
-        "name": "Game2",
-        "id": "game2" 
-      }
+    "games": [{
+            "name": "Hoop With Me",
+            "time": "4:00 PM",
+            "date": "2/15/19",
+            "skill": "Beginner",
+            "players": "4v4",
+            "map": "game1.png",
+            "distance": "0.4 mi"
+        },
+        {
+            "name": "Pro Game",
+            "time": "10:00 PM",
+            "date": "2/15/19",
+            "skill": "Advanced",
+            "players": "10v10",
+            "map": "game1.png",
+            "distance": "1.2 mi"
+        },
+        {
+            "name": "Chilling",
+            "time": "10:30 AM",
+            "date": "2/16/19",
+            "skill": "Intermediate",
+            "players": "Unlimited",
+            "map": "game2.png",
+            "distance": "3.2 mi"
+        }
 
     ]
 }
