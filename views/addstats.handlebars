@@ -14,8 +14,9 @@
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 	<!-- CSS -->
-  	<link rel="stylesheet" href="/css/addstats.css">
-   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/addstats.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
 	<!-- JS -->
@@ -36,26 +37,36 @@
 			</span>
 		</div>
 	</nav>
-	
+
 	<!-- nav bar bottom -->
 	<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
 		<div class="container">
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link active" href="/home"><div><i class="fas fa-map-marker-alt"></i></div></a>
+						<a class="nav-link" href="/home">
+							<div><i class="fas fa-map-marker-alt"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/savedgames"><div><i class="fas fa-basketball-ball"></i></div></a>
+						<a class="nav-link" href="/savedgames">
+							<div><i class="fas fa-basketball-ball"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/mystats"><div><i class="far fa-chart-bar"></i></div></a>
+						<a class="nav-link active" href="/mystats">
+							<div><i class="far fa-chart-bar"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/friends"><div><i class="fas fa-user-friends"></i></div></a>
+						<a class="nav-link" href="/friends">
+							<div><i class="fas fa-user-friends"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
+						<a class="nav-link" href="/account">
+							<div><i class="fas fa-user-circle"></i></div>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -63,14 +74,44 @@
 	</nav>
 
 	<!-- Main Form Elements -->
-	<form action="">
-		<input type>
-	</form>
+	<div class="container">
+		<form id="addStatsForm" role="form" method="get" action="/add">
+			<div class="btn-group btn-group-toggle text-center" data-toggle="buttons">
+				<label class="btn btn-secondary">
+					<input type="radio" name="Win" id="Win" autocomplete="off" checked> Win
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" name="Tie" id="Tie" autocomplete="off"> Tie
+				</label>
+				<label class="btn btn-secondary">
+					<input type="radio" name="Loss" id="Loss" autocomplete="off"> Loss
+				</label>
+			</div>
+			<br>
+			<div class="form-group text-center">
+				<input type="date" id="game-date" name="game-day" required>
+			</div>
+			<div class="form-group">
+				<input type="number" step="1" class="form-control" id="points" placeholder="Points Scored" name="points"
+					required>
+			</div>
+			<div class="form-group">
+				<input type="number" step="1" class="form-control" id="goals" placeholder="Rebounds Made" name="rebounds"
+					required>
+			</div>
+			<div class="form-group">
+				<input type="number" step="1" class="form-control" id="goals" placeholder="Assists Given" name="assists"
+					required>
+			</div>
+			<div class="text-center">
+				<button type="submit" id="submitbtn" class="btn btn-primary">Save Statistics</input required>
+			</div>
+		</form>
+	</div>
 
 	<!--JS Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
 		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
 		crossorigin="anonymous"></script>

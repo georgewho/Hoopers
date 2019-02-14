@@ -2,6 +2,6 @@
  * GET add page.
  */
 
-exports.view = function(req, res){
-  res.render('addstats');
+exports.view = function(req, res) {
+    res.render('addstats');
 };

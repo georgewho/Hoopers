@@ -1,40 +1,79 @@
 body {
-  padding-top: 75px;
+    padding-top: 75px;
 }
-h2,h1,h3,h4,h5,h6,p{
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Montserrat', sans-serif;
-  }
-
-/*navbar*/
-.fa-search:before {
-  padding-left: 8px;
 }
 
-.fa-list-ul:before {
-  padding-left: 19px;
+
+/*bottom navbar elements*/
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    line-height: 20px;
 }
 
-.fa-chart-bar:before {
-  padding-left: 10px;
+.navbar-light .navbar-nav .nav-link {
+    line-height: 20px;
 }
 
-.fa-user-friends:before {
-  padding-left: 15px;
-}
-
-.fa-user-circle:before {
-  padding-left: 21px;
-}
-
-.navbar {
-  padding-right: 1px;
+.fixed-bottom {
+    height: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .navbar-light .navbar-brand {
     color: black;
     font-size: 1.75rem;
+    padding-left: 10px;
 }
 
 .fa-plus:before {
     padding-right: 30px;
+}
+
+.form-control {
+    text-align: center;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=time] {
+    -webkit-appearance: textarea;
+    text-align: center;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+}
+
+.btn-primary {
+    color: #111;
+    background-color: #ffbc3d;
+    width: 200px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+input[type="date" i],
+input[type="datetime-local" i],
+input[type="month" i],
+input[type="time" i],
+input[type="week" i] {
+    border-color: rgb(255, 255, 255);
 }

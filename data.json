@@ -2,7 +2,6 @@
     "stats": [{
             "date": "1/02/19",
             "result": "Win",
-            "goals": "1",
             "points": "2",
             "trebounds": "3",
             "assists": "4"
@@ -10,7 +9,6 @@
         {
             "date": "1/09/19",
             "result": "Loss",
-            "goals": "5",
             "points": "6",
             "trebounds": "7",
             "assists": "8"
@@ -18,7 +16,6 @@
         {
             "date": "1/16/19",
             "result": "Loss",
-            "goals": "4",
             "points": "3",
             "trebounds": "2",
             "assists": "1"
@@ -26,7 +23,6 @@
         {
             "date": "1/27/19",
             "result": "Loss",
-            "goals": "9",
             "points": "6",
             "trebounds": "3",
             "assists": "1"
@@ -34,7 +30,6 @@
         {
             "date": "2/06/19",
             "result": "Win",
-            "goals": "4",
             "points": "11",
             "trebounds": "5",
             "assists": "3"
@@ -42,7 +37,6 @@
         {
             "date": "2/10/19",
             "result": "Win",
-            "goals": "6",
             "points": "4",
             "trebounds": "16",
             "assists": "13"
