@@ -9,6 +9,7 @@ var handlebars = require('express3-handlebars')
 
 var home = require('./routes/home');
 var login = require('./routes/login');
+var signup = require('./routes/signup');
 var savedgames = require('./routes/savedgames');
 var mystats = require('./routes/mystats');
 var friends = require('./routes/friends');
@@ -43,6 +44,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', login.view);
+app.get('/signup', signup.view);
 app.get('/home', home.view);
 app.get('/mystats', mystats.view);
 app.get('/savedgames', savedgames.view);
