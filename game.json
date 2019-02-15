@@ -1,7 +1,7 @@
 {
     "games": [{
             "name": "Hoop With Me",
-            "time": "4:00 PM",
+            "time": "4:00",
             "date": "2/15/19",
             "skill": "Beginner",
             "players": "4v4",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Pro Game",
-            "time": "10:00 PM",
+            "time": "10:00",
             "date": "2/15/19",
             "skill": "Advanced",
             "players": "10v10",
@@ -19,7 +19,7 @@
         },
         {
             "name": "Chilling",
-            "time": "10:30 AM",
+            "time": "13:30",
             "date": "2/16/19",
             "skill": "Intermediate",
             "players": "Unlimited",
