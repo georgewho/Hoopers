@@ -75,13 +75,13 @@
 
 	<!-- Main Form Elements -->
 	<div class="container">
-		<form id="addStatsForm" role="form" method="get" action="/add">
+		<form id="addStatsForm" method="get" action="/addstats">
 	
-			<div class="form-group">
-				<input type="date" class="form-control" id="game-date" name="date" required>
+			<div class="form-group" role="form">
+				<input type="date" class="form-control" id="gameDate" name="date" required>
 			</div>
 			<div class="form-group">
-				<select class="form-control" id="game-result" name="result">
+				<select class="form-control" id="gameResult" name="result">
 					<label for="game-result">Game Result</label><br>
 					<option>Win</option>
 					<option>Tie</option>
@@ -89,15 +89,15 @@
 				</select required>
 			</div>
 			<div class="form-group">
-				<input type="number" step="1" class="form-control" id="points" placeholder="Points Scored" name="points"
+				<input type="number" step="1" class="form-control" id="pts" placeholder="Points Scored" name="points"
 					required>
 			</div>
 			<div class="form-group">
-				<input type="number" step="1" class="form-control" id="goals" placeholder="Rebounds Made" name="trebounds"
+				<input type="number" step="1" class="form-control" id="rbd" placeholder="Rebounds Made" name="trebounds"
 					required>
 			</div>
 			<div class="form-group">
-				<input type="number" step="1" class="form-control" id="goals" placeholder="Assists Given" name="assists"
+				<input type="number" step="1" class="form-control" id="ast" placeholder="Assists Given" name="assists"
 					required>
 			</div>
 			<div class="text-center">

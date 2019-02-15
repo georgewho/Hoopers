@@ -14,7 +14,10 @@ var savedgames = require('./routes/savedgames');
 var mystats = require('./routes/mystats');
 var friends = require('./routes/friends');
 var account = require('./routes/account');
+
+//var addstatspage = require('./routes/addstatspage');
 var addstats = require('./routes/addstats');
+
 var viewgames = require('./routes/viewgames');
 var addgames = require('./routes/addgames');
 
@@ -50,7 +53,8 @@ app.get('/mystats', mystats.view);
 app.get('/savedgames', savedgames.view);
 app.get('/friends', friends.view);
 app.get('/account', account.view);
-app.get('/addstats', addstats.view);
+app.get('/addstatspage', addstats.view);
+app.get('/addstats', addstats.addStatsview);
 app.get('/viewgames', viewgames.view)
 app.get('/addgames', addgames.view);
 // Example route

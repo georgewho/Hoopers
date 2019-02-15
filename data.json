@@ -1,45 +1,45 @@
 {
     "stats": [{
-            "date": "1/02/19",
+            "date": "2019-01-19",
             "result": "Win",
             "points": "2",
             "trebounds": "3",
             "assists": "4"
         },
         {
-            "date": "1/09/19",
-            "result": "Loss",
-            "points": "6",
-            "trebounds": "7",
-            "assists": "8"
+            "date": "2019-01-19",
+            "result": "Win",
+            "points": "2",
+            "trebounds": "3",
+            "assists": "9"
         },
         {
-            "date": "1/16/19",
-            "result": "Loss",
-            "points": "3",
+            "date": "2019-01-19",
+            "result": "Win",
+            "points": "2",
             "trebounds": "2",
             "assists": "1"
         },
         {
-            "date": "1/27/19",
-            "result": "Loss",
-            "points": "6",
-            "trebounds": "3",
-            "assists": "1"
+            "date": "2019-01-19",
+            "result": "Lose",
+            "points": "2",
+            "trebounds": "8",
+            "assists": "7"
         },
         {
-            "date": "2/06/19",
+            "date": "2019-02-19",
             "result": "Win",
-            "points": "11",
-            "trebounds": "5",
+            "points": "2",
+            "trebounds": "2",
             "assists": "3"
         },
         {
-            "date": "2/10/19",
-            "result": "Win",
-            "points": "4",
-            "trebounds": "16",
-            "assists": "13"
+            "date": "2019-03-19",
+            "result": "Tie",
+            "points": "2",
+            "trebounds": "7",
+            "assists": "2"
         }
     ]
 }
