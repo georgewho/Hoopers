@@ -64,9 +64,48 @@
 	</nav>
 
 	<!-- Main Form Elements -->
-	<form action="">
-		<input type
-	</form>
+		<div class="container">
+		<form id="addGamesForm" role="form" method="get" action="/add">
+			<br>
+			<div class = "form-group">
+				<label for="game-name">Name</label><br>
+				<input type="text" class="form-control" id="game-name" name="name" placeholder="example name" required>
+			</div>
+
+			<div class="form-group">
+				<label for="game-time">Time</label><br>
+				<input type ="time" class="form-control" id="game-time" name="time" required>
+			</div>
+
+			<div class="form-group">
+				<label for="game-date">Date</label><br>
+				<input type="date" class="form-control" id="game-date" name="day" required>
+			</div>
+
+			<div class="form-group">
+				<label for="game-skill">Skill</label><br>
+				<select class="form-control" id="game-skill" name="skill">
+      				<option>Beginner</option>
+      				<option>Intermediate</option>
+      				<option>Advanced</option>
+    			</select required>
+			</div>
+
+			<div class="form-group">
+				<label for="game-players">Players</label><br>
+				<input type="text" class="form-control" id="game-players" name="player" placeholder="example 4v4" required>
+			</div>
+
+			<div class="form-group">
+				<label for="game-distance">Distance</label><br>
+				<input type="text" class="form-control" id="game-distance" name="distance" placeholder="1.2 mi" required>
+			</div>
+
+			<div class="text-center">
+				<button type="submit" id="submitbtn" class="btn btn-primary">Save Game</input required>
+			</div>
+		</form>
+	</div>
 
 	<!--JS Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

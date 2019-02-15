@@ -43,7 +43,6 @@ p {
 }
 
 .form-control {
-    text-align: center;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -54,7 +53,6 @@ input[type=datetime-local],
 input[type=month],
 input[type=time] {
     -webkit-appearance: textarea;
-    text-align: center;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -75,5 +73,5 @@ input[type="datetime-local" i],
 input[type="month" i],
 input[type="time" i],
 input[type="week" i] {
-    border-color: rgb(255, 255, 255);
+    border-color: #ced4da;
 }
