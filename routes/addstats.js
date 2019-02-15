@@ -19,10 +19,11 @@ exports.addStatsview = function(req, res) {
     data.stats.push(newStat);
     console.log(data);
     res.render('mystats',data);
-
-    
 }
 
+/*
+* GET add stats page
+*/
  exports.view = function(req, res) {
     res.render('addstats',data);
 }

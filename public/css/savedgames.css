@@ -1,5 +1,17 @@
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     padding-top: 75px;
+    padding-bottom: 75px;
+    overscroll-behavior-y: none;
 }
 
 
@@ -25,4 +37,22 @@ body {
 .navbar-light .navbar-brand {
     color: black;
     font-size: 1.75rem;
+}
+
+.distance {
+    padding-top: 5px;
+}
+
+img {
+    padding: 5px;
+    width: 400px;
+}
+.upcominggames{
+    padding-bottom:100px;
+}
+.mygame {
+    box-shadow: 0 8px 6px -6px black;
+    padding-top: 25px;
+    overflow: hidden;
+    color: black;
 }

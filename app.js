@@ -15,7 +15,6 @@ var mystats = require('./routes/mystats');
 var friends = require('./routes/friends');
 var account = require('./routes/account');
 
-//var addstatspage = require('./routes/addstatspage');
 var addstats = require('./routes/addstats');
 
 var viewgames = require('./routes/viewgames');
@@ -56,7 +55,10 @@ app.get('/account', account.view);
 app.get('/addstatspage', addstats.view);
 app.get('/addstats', addstats.addStatsview);
 app.get('/viewgames', viewgames.view)
+
+
 app.get('/addgames', addgames.view);
+app.get('/addgamesview', addgames.addGamesview)
 // Example route
 // app.get('/users', user.list);
 

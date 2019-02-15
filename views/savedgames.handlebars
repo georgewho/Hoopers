@@ -43,26 +43,12 @@
 			<h3>Created Games</h3>
 
 			{{#each games}}
-			<div class="mygame" id="{{id}}">
-				<a href="/viewgames">
-        		<p>{{name}}</p>
-
-					<a href="/viewgames">
-			<!--<div class="game">
-				<div class="row">
-					<div class="col-8">
-						<h3 class="gamename">{{name}}</h3>
-					</div>
-					<div class="col-4">
-						<h5 class="distance">{{distance}}</h5>
-					</div>
-				</div>
+			<div class="mygame">		
+        		<h3>{{name}}</h3>
 				<h5>{{time}} &emsp; {{date}}</h5>
 				<h5>{{skill}} &emsp; {{players}}</h5>
-				<img src="images/{{map}}" alt="gamepic">
-			</div>
--->
-     			</a>
+				<h5 class="distance">{{distance}}</h5>
+     			<img src="images/{{map}}" alt="gamepic">
   			  </div>
 			{{/each}}
 	</div>
