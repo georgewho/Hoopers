@@ -1,0 +1,22 @@
+body {
+    padding-top: 15%;
+    overscroll-behavior-y: none;
+}
+
+
+/*bottom navbar elements*/
+
+.fixed-bottom {
+    height: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 1.75rem;
+}
+
+.fa-plus:before {
+    padding-right: 30px;
+}

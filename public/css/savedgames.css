@@ -48,11 +48,17 @@ img {
     width: 400px;
 }
 .upcominggames{
-    padding-bottom:100px;
+    padding-bottom:15%;
 }
-.mygame {
+.mygames{
+    padding-top: 5%;
+    padding-bottom:5%;
+}
+.game {
+    background-color:lightblue;
+    margin-top: 5%;
+    margin-bottom: 5%;
     box-shadow: 0 8px 6px -6px black;
-    padding-top: 25px;
     overflow: hidden;
     color: black;
 }
