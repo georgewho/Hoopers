@@ -47,18 +47,27 @@ img {
     padding: 5px;
     width: 400px;
 }
-.upcominggames{
-    padding-bottom:15%;
+
+.upcominggames {
+    padding-bottom: 15%;
 }
-.mygames{
+
+.mygames {
     padding-top: 5%;
-    padding-bottom:5%;
+    padding-bottom: 5%;
 }
+
 .game {
-    background-color:lightblue;
+    background-color: lightblue;
     margin-top: 5%;
     margin-bottom: 5%;
     box-shadow: 0 8px 6px -6px black;
     overflow: hidden;
     color: black;
+}
+
+.btn-primary {
+    background-color: orange;
+    border-color: orange;
+    color: white;
 }

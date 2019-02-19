@@ -96,3 +96,9 @@ table#linedtable td {
 }
 
 @media only screen and (max-device-width: 480px) {}
+
+.btn-primary {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
