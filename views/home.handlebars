@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="/css/home.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		crossorigin="" />
 
 	<!-- JS -->
 	<script src='/js/bootstrap.min.js'></script>
@@ -26,6 +29,10 @@
 </head>
 
 <body>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+		integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+		crossorigin=""></script>
+
 	<!-- header -->
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
 		<div class="navbar-collapse collapse" id="headerText">
@@ -34,7 +41,7 @@
 			</span>
 		</div>
 	</nav>
-	
+
 	<!-- nav bar bottom -->
 	<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
 		<div class="container">
@@ -56,11 +63,6 @@
 						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/friends">
-							<div><i class="fas fa-user-friends"></i></div>
-						</a>
-					</li>
-					<li class="nav-item text-center">
 						<a class="nav-link" href="/account">
 							<div><i class="fas fa-user-circle"></i></div>
 						</a>
@@ -71,33 +73,47 @@
 	</nav>
 
 
+
+
 	<!-- game listings -->
 	<div class="container-fluid gamelist">
 		{{#each games}}
 
-		<a href="/viewgames">
-			<div class="game">
-				<div class="row">
-					<div class="col-8">
-						<h3 class="gamename">{{name}}</h3>
-					</div>
-
-				<div class="custom-control custom-checkbox">
+	
+		<div class="game">
+			<div class="row">
+				<div class="col-8">
+					<h3 class="gamename">{{name}}</h3>
+				</div>
+					<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input" id="favorited">
 					<label class="custom-control-label" for="customCheck1"></label>
 				</div>
-
-					<div class="col-4">
-						<h5 class="distance">{{distance}}mi</h5>
-					</div>
+				<div class="col-4">
+					<h5 class="distance">{{distance}}</h5>
 				</div>
-				<h5>{{time}} &emsp; {{date}}</h5>
-				<h5>{{skill}} &emsp; {{players}}</h5>
-				<img src="images/{{map}}" alt="gamepic">
 			</div>
-		</a>
+			<h5>{{time}} &emsp; {{date}}</h5>
+			<h5>{{skill}} &emsp; {{players}}</h5>
+			<div id="mapArea1">
+			</div>
+		</div>
 		{{/each}}
 	</div>
+
+	<script>
+		// initialize the map
+		var map = L.map('mapArea1').setView([32.881114, -117.237478], 13);
+
+		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(map)
+
+		var marker = L.marker([32.885224, -117.239231]).addTo(map);
+		marker.bindPopup("<b>RIMAC</b>");
+	</script>
 
 	<!--JS Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

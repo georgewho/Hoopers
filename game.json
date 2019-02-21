@@ -1,5 +1,6 @@
 {
     "games": [{
+            "mapID": "mapArea1",
             "name": "Hoop With Me",
             "time": "4:00",
             "date": "2019-01-22",
@@ -10,6 +11,7 @@
             "isFavorited":true
         },
         {
+            "mapID": "mapArea2",
             "name": "Pro Game",
             "time": "10:00",
             "date": "2019-02-15",
@@ -20,6 +22,7 @@
             "isFavorited":false 
         },
         {
+            "mapID": "mapArea3",
             "name": "Chilling",
             "time": "13:30",
             "date": "2019-02-16",
