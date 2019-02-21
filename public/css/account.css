@@ -1,5 +1,6 @@
 body {
-    padding-top: 75px;
+    padding-top: 15%;
+    overscroll-behavior-y: none;
 }
 
 
