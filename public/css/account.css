@@ -1,5 +1,5 @@
 body {
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
 
@@ -14,4 +14,10 @@ body {
 .navbar-light .navbar-brand {
     color: black;
     font-size: 1.75rem;
+}
+
+.btn-primary {
+    background-color: orange;
+    color: white;
+    border-color: orange;
 }
