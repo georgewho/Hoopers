@@ -1,5 +1,6 @@
 {
     "games": [{
+            "mapID": "mapArea1",
             "name": "Hoop With Me",
             "time": "4:00",
             "date": "2/15/19",
@@ -9,6 +10,7 @@
             "distance": "0.4 mi"
         },
         {
+            "mapID": "mapArea2",
             "name": "Pro Game",
             "time": "10:00",
             "date": "2/15/19",
@@ -18,6 +20,7 @@
             "distance": "1.2 mi"
         },
         {
+            "mapID": "mapArea3",
             "name": "Chilling",
             "time": "13:30",
             "date": "2/16/19",

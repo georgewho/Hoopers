@@ -54,13 +54,13 @@ img {
     box-shadow: 0 8px 6px -6px black;
     overflow: hidden;
     color: black;
-    background-color:lightblue;
+    background-color: lightblue;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
 .gamelist {
-    padding-bottom:15%;
+    padding-bottom: 15%;
     padding-top: 5%;
 }
 
@@ -69,3 +69,15 @@ img {
 }
 
 @media only screen and (max-device-width: 480px) {}
+
+#mapArea1 {
+    height: 180px;
+}
+
+#mapArea1 {
+    height: 180px;
+}
+
+#mapArea1 {
+    height: 180px;
+}
