@@ -9,18 +9,24 @@
 	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/qHyjd86.png">
 
 	<!-- jQuery -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+	
 	<!-- CSS -->
 	<link rel="stylesheet" href="/css/account.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		crossorigin="" />
 
 	<!-- JS -->
+	<script src='/js/bootstrap.min.js'></script>
+	<script src='/js/account.js'></script>
+
 </head>
 
 <body>
@@ -37,6 +43,7 @@
 			</ul>
 		</div>
 	</nav>
+
 	
 	<!-- nav bar bottom -->
 
@@ -69,23 +76,26 @@
 		</div>
 	</nav>
 <br>
-<div class="profile">
-	<div class="profilepic">
-		<img src="" alt="profpic">
-		<div class="row">
-			name
+
+<div class="container-fluid">
+		<div class="welcome">
+			<div style="text-align: center;">
+				<div id="user">
+					<img src="" class="userphoto">
+				<i class="fas fas-user-circle fa-3x" aria-hidden = 'true' id="icon"></i>
+					<h2 id = "name"></h2>
+				</div>
+			<div class="form-group">
+				<label for="game-date">Description</label><br>
+				<input type="text" class="form-control" id="description" name="description" required>
+			</div>
+			<div class="form-group">
+				<label for="game-date">Comments</label><br>
+				<input type="text" class="form-control" id="description" name="description" required>
+			</div>
+			</div>
 		</div>
-		<div class="row">
-			description
-		</div>
-		<div class="row">
-			comments
-		</div>
-	</div>
 </div>
-
-
-
 
 	<!--JS Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

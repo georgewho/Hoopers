@@ -20,7 +20,8 @@
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<!-- JS -->
-
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,12 @@
         <input type="password" placeholder="Enter Password" name="psw" required>
 
        <a class="loggingin" href="/home"> <button type="submit" class="registerbtn">Log In</button></a>
-	   <a class="loggingin" href="/home"> <button type="submit" class="registerbtn">Use Facebook</button></a>
+	   <div style="text-align: center;">
+	   <fb:login-button 
+ 			scope="public_profile,email"
+ 		 	onlogin="checkLoginState();">
+		</fb:login-button>
+		</div>
     </div>
    
     <hr>

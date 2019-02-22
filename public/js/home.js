@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 // need to link the click function/custom checkbox of the star
-$("checkbox").change(addFavGame);
+  $("checkbox").change(addFavGame);
 }
 
 function addFavGame(e){
