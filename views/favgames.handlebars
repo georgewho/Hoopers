@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Created Games - Hoopers</title>
+	<title>Saved Games - Hoopers</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/qHyjd86.png">
@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="/css/savedgames.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 	<!-- Leaflet CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
 		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -39,17 +38,14 @@
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
 		<div class="navbar-collapse collapse" id="headerText">
 			<span class="navbar-brand">
-				Created Games
+				Upcoming Games
 			</span>
-			<ul class="nav navbar-nav ml-auto">
-				<li><a class="btn btn-primary" href="/addgames" role="button">Create Game</a></li>
-			</ul>
 		</div>
 	</nav>
 
 
-	<div class="container mygames">
-			{{#each games}}
+	<div class="container upcominggames">
+		{{#each games}}
 		<div class="game">
 			<div class="row">
 				<div class="col-8">
@@ -67,67 +63,42 @@
 		{{/each}}
 	</div>
 
-		<script>
-			// initialize the map
-			var map = L.map('mapArea1').setView([32.881114, -117.237478], 13);
-			var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-				subdomains: 'abcd',
-				maxZoom: 19
-			}).addTo(map)
-
-			var marker = L.marker([32.885224, -117.239231]).addTo(map);
-			marker.bindPopup("<b>RIMAC</b>");
-
-			var map = L.map('mapArea2').setView([32.881114, -117.237478], 13);
-
-			var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-				subdomains: 'abcd',
-				maxZoom: 19
-			}).addTo(map)
-
-			var marker = L.marker([32.885224, -117.239231]).addTo(map);
-			marker.bindPopup("<b>RIMAC</b>");
-
-			var map = L.map('mapArea3').setView([32.881114, -117.237478], 13);
-
-			var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-				subdomains: 'abcd',
-				maxZoom: 19
-			}).addTo(map)
-
-			var marker = L.marker([32.885224, -117.239231]).addTo(map);
-			marker.bindPopup("<b>RIMAC</b>");
-		</script>
 
 
 
-	<!-- nav bar bottom -->
-	<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
-		<div class="container">
-			<div class="navbar-collapse collapse" id="homeNav">
-				<ul class="navbar-nav nav-fill w-100">
-					<li class="nav-item text-center">
-						<a class="nav-link" href="/home"><div><i class="fas fa-map-marker-alt"></i></div></a>
-					</li>
-					<li class="nav-item text-center">
-						<a class="nav-link active" href="/savedgames"><div><i class="fas fa-basketball-ball"></i></div></a>
-					</li>
-					<li class="nav-item text-center">
-						<a class="nav-link" href="/favgames"><div><i class="fas fa-heart"></i></div></a>
-					</li>
-					<li class="nav-item text-center">
-						<a class="nav-link" href="/mystats"><div><i class="far fa-chart-bar"></i></div></a>
-					</li>
-					<li class="nav-item text-center">
-						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
-					</li>
-				</ul>
+		<!-- nav bar bottom -->
+		<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
+			<div class="container">
+				<div class="navbar-collapse collapse" id="homeNav">
+					<ul class="navbar-nav nav-fill w-100">
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/home">
+								<div><i class="fas fa-map-marker-alt"></i></div>
+							</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/savedgames">
+								<div><i class="fas fa-basketball-ball"></i></div>
+							</a>
+						</li>
+                       <li class="nav-item text-center">
+						<a class="nav-link active" href="/favgames"><div><i class="fas fa-heart"></i></div></a>
+					 </li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/mystats">
+								<div><i class="far fa-chart-bar"></i></div>
+							</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/account">
+								<div><i class="fas fa-user-circle"></i></div>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
+
 
 	<script>
 		// initialize the map
@@ -163,8 +134,11 @@
 
 	</script>
 
+    
 		<!--JS Bootstrap -->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
 			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
 			crossorigin="anonymous"></script>

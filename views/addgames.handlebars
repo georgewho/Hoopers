@@ -10,6 +10,7 @@
 
 	<!-- jQuery -->
 
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -18,6 +19,9 @@
 	<link rel="stylesheet" href="/css/addgames.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		crossorigin="" />
 
 
 	<!-- JS -->
@@ -25,6 +29,11 @@
 </head>
 
 <body>
+
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+		integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+		crossorigin="">
+		</script>
 
 	<!-- header/top nav bar -->
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
@@ -45,16 +54,24 @@
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link active" href="/home"><div><i class="fas fa-map-marker-alt"></i></div></a>
+						<a class="nav-link active" href="/home">
+							<div><i class="fas fa-map-marker-alt"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/savedgames"><div><i class="fas fa-basketball-ball"></i></div></a>
+						<a class="nav-link" href="/savedgames">
+							<div><i class="fas fa-basketball-ball"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/mystats"><div><i class="far fa-chart-bar"></i></div></a>
+						<a class="nav-link" href="/mystats">
+							<div><i class="far fa-chart-bar"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
+						<a class="nav-link" href="/account">
+							<div><i class="fas fa-user-circle"></i></div>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -62,17 +79,17 @@
 	</nav>
 
 	<!-- Main Form Elements -->
-		<div class="container">
+	<div class="container">
 		<form id="addGamesForm" role="form" method="get" action="/addgamesview">
 			<br>
-			<div class = "form-group">
+			<div class="form-group">
 				<label for="game-name">Name</label><br>
 				<input type="text" class="form-control" id="game-name" name="name" placeholder="game name" required>
 			</div>
 
 			<div class="form-group">
 				<label for="game-time">Time</label><br>
-				<input type ="time" class="form-control" id="game-time" name="time" required>
+				<input type="time" class="form-control" id="game-time" name="time" required>
 			</div>
 
 			<div class="form-group">
@@ -83,10 +100,10 @@
 			<div class="form-group">
 				<label for="game-skill">Skill</label><br>
 				<select class="form-control" id="game-skill" name="skill">
-      				<option>Beginner</option>
-      				<option>Intermediate</option>
-      				<option>Advanced</option>
-    			</select required>
+					<option>Beginner</option>
+					<option>Intermediate</option>
+					<option>Advanced</option>
+				</select required>
 			</div>
 
 			<div class="form-group">
@@ -94,16 +111,45 @@
 				<input type="text" class="form-control" id="game-players" name="players" placeholder="4v4" required>
 			</div>
 
-			<div class="form-group">
-				<label for="game-distance">Distance</label><br>
-				<input type="text" class="form-control" id="game-distance" name="distance" placeholder="mi" required>
+			<div id="userMap">
 			</div>
+
+			<br>
 
 			<div class="text-center">
 				<button type="submit" id="submitbtn" class="btn btn-primary">Save Game</input required>
 			</div>
 		</form>
 	</div>
+
+	<script>
+		//initialize map
+		var map1 = L.map('userMap').setView([32.881114, -117.237478], 13);
+
+		//create layers and add to map
+		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(map1)
+
+		//create a marker where the user clicks
+		var newMarker;
+		map1.on("click", function (event) {
+			if (newMarker) {
+				newMarker.setLatLng(event.latlng);
+				return;
+			}
+
+			newMarker = L.marker(event.latlng, {
+				draggable: true
+			}).addTo(map1).on("click", function () {
+				event.originalEvent.stopPropagation();
+			});
+		});
+
+	</script>
+
 
 	<!--JS Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

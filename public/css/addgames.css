@@ -1,6 +1,7 @@
 body {
     padding-top: 15%;
     overscroll-behavior-y: none;
+    padding-bottom: 20%;
 }
 
 
@@ -19,4 +20,8 @@ body {
 
 .fa-plus:before {
     padding-right: 30px;
+}
+
+#userMap {
+    height: 180px;
 }

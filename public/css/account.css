@@ -1,8 +1,26 @@
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
 body {
     overscroll-behavior-y: none;
-    padding-top: 50px;
+    padding-top: 15%;;
 }
 
+/*top navbar elements*/
+
+.fixed-top {
+    height: 67.6px;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+}
 
 /*bottom navbar elements*/
 
@@ -22,3 +40,18 @@ body {
     color: white;
     border-color: orange;
 }
+<<<<<<< HEAD
+=======
+
+/*body*/
+.userinfo{
+    position:center;
+    text-align:center;
+    padding-top:10%;
+    padding-bottom: 20%;
+}
+
+.comments{
+    padding-left: 5%;
+}
+>>>>>>> fa7742a676d2f8485b21f9fdcc88b5048adf7eec

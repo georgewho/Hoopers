@@ -10,13 +10,15 @@ exports.addGamesview = function(req, res) {
     //console.log(req.query.points);
 
     newGame = {
+        "id": gamedata.games.length,
+        "mapID": "mapArea1",  //FIX
         "name": req.query.name,
         "time": req.query.time,
         "date": req.query.date,
         "skill": req.query.skill,
         "players": req.query.players,
-        "map": "game1.png",
         "distance": req.query.distance,
+        "isFavorited" : false
     };
     console.log(newGame);
     gamedata.games.push(newGame);
