@@ -10,13 +10,18 @@ $(document).ready(function() {
  */
 function initializePage() {
 // need to link the click function/custom checkbox of the star
-$("checkbox").change(addFavGame);
+$('.button').on('change', function(e){ // on change of state
+ 
+       e.preventDefault();
+       console.log("clicked");
+      var endpoint = "/favoritegame/".concat(this.id);
+	    console.log(endpoint);
+       $.get(endpoint, callback);
+})
 }
 
-function addFavGame(e){
-  e.preventDefault();
-  if(this.checked) {
-    console.log("clicked");
+
+function callback(result){
+  console.log("callabck");
 }
 
-}

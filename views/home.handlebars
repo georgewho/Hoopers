@@ -31,7 +31,8 @@
 <body>
 	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
 		integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-		crossorigin=""></script>
+		crossorigin="">
+	</script>
 
 	<!-- header -->
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
@@ -58,6 +59,11 @@
 						</a>
 					</li>
 					<li class="nav-item text-center">
+						<a class="nav-link" href="/favgames">
+							<div><i class="fas fa-heart"></i></div>
+						</a>
+					</li>
+					<li class="nav-item text-center">
 						<a class="nav-link" href="/mystats">
 							<div><i class="far fa-chart-bar"></i></div>
 						</a>
@@ -73,24 +79,20 @@
 	</nav>
 
 
-
-
 	<!-- game listings -->
 	<div class="container-fluid gamelist">
 		{{#each games}}
-
-	
 		<div class="game">
 			<div class="row">
 				<div class="col-8">
 					<h3 class="gamename">{{name}}</h3>
 				</div>
-					<div class="custom-control custom-checkbox">
-					<input type="checkbox" class="custom-control-input" id="favorited">
-					<label class="custom-control-label" for="customCheck1"></label>
-				</div>
+					<div class="form-check">
+					<input class="button" type="checkbox" value="" id="{{id}}">
+					</label>
+					</div>
 				<div class="col-4">
-					<h5 class="distance">{{distance}}</h5>
+					<h5 class="distance">{{distance}}mi</h5>
 				</div>
 			</div>
 			<h5>{{time}} &emsp; {{date}}</h5>
@@ -103,43 +105,42 @@
 
 	<script>
 		// initialize the map
-		var map = L.map('mapArea1').setView([32.881114, -117.237478], 13);
-		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+		var map1 = L.map('mapArea1').setView([32.881114, -117.237478], 13);
+		var map2 = L.map('mapArea2').setView([32.881114, -117.237478], 13);
+		var map3 = L.map('mapArea3').setView([32.881114, -117.237478], 13);
+
+		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map)
+		}).addTo(map1)
 
-		var marker = L.marker([32.885224, -117.239231]).addTo(map);
-		marker.bindPopup("<b>RIMAC</b>");
+		var marker1 = L.marker([32.885224, -117.239231]).addTo(map1);
+		marker1.bindPopup("<b>RIMAC</b>");
 
-		var map = L.map('mapArea2').setView([32.881114, -117.237478], 13);
 
-		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+		var layer2 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map)
+		}).addTo(map2)
 
-		var marker = L.marker([32.885224, -117.239231]).addTo(map);
-		marker.bindPopup("<b>RIMAC</b>");
+		var marker2 = L.marker([32.885224, -117.239231]).addTo(map2);
+		marker2.bindPopup("<b>RIMAC</b>");
 		
-		var map = L.map('mapArea3').setView([32.881114, -117.237478], 13);
-
-		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+		
+		var layer3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map)
+		}).addTo(map3)
 
-		var marker = L.marker([32.885224, -117.239231]).addTo(map);
-		marker.bindPopup("<b>RIMAC</b>");
+		var marker3 = L.marker([32.885224, -117.239231]).addTo(map3);
+		marker3.bindPopup("<b>RIMAC</b>");
 	</script>
 
 	<!--JS Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
 		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
 		crossorigin="anonymous"></script>

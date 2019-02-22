@@ -1,19 +1,21 @@
 {
     "games": [{
+            "id":"0",
             "mapID": "mapArea1",
             "name": "Hoop With Me",
-            "time": "4:00",
+            "time": "4:00 AM",
             "date": "2019-01-22",
             "skill": "Beginner",
             "players": "4v4",
             "map": "game1.png",
             "distance": "0.4",
-            "isFavorited":true
+            "isFavorited":false
         },
         {
+            "id":"1",
             "mapID": "mapArea2",
             "name": "Pro Game",
-            "time": "10:00",
+            "time": "10:00 PM",
             "date": "2019-02-15",
             "skill": "Advanced",
             "players": "10v10",
@@ -22,9 +24,10 @@
             "isFavorited":false 
         },
         {
+            "id":"2",
             "mapID": "mapArea3",
             "name": "Chilling",
-            "time": "13:30",
+            "time": "1:30 PM",
             "date": "2019-02-16",
             "skill": "Intermediate",
             "players": "Unlimited",
