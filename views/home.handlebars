@@ -59,6 +59,11 @@
 						</a>
 					</li>
 					<li class="nav-item text-center">
+						<a class="nav-link" href="/favgames">
+							<div><i class="fas fa-heart"></i></div>
+						</a>
+					</li>
+					<li class="nav-item text-center">
 						<a class="nav-link" href="/mystats">
 							<div><i class="far fa-chart-bar"></i></div>
 						</a>
@@ -77,19 +82,17 @@
 	<!-- game listings -->
 	<div class="container-fluid gamelist">
 		{{#each games}}
-
-	
 		<div class="game">
 			<div class="row">
 				<div class="col-8">
 					<h3 class="gamename">{{name}}</h3>
 				</div>
 					<div class="form-check">
-					<input class="form-check-input" type="checkbox" value="" id="{{id}}">
+					<input class="button" type="checkbox" value="" id="{{id}}">
 					</label>
 					</div>
 				<div class="col-4">
-					<h5 class="distance">{{distance}}</h5>
+					<h5 class="distance">{{distance}}mi</h5>
 				</div>
 			</div>
 			<h5>{{time}} &emsp; {{date}}</h5>
@@ -102,37 +105,38 @@
 
 	<script>
 		// initialize the map
-		var map = L.map('mapArea1').setView([32.881114, -117.237478], 13);
-		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+		var map1 = L.map('mapArea1').setView([32.881114, -117.237478], 13);
+		var map2 = L.map('mapArea2').setView([32.881114, -117.237478], 13);
+		var map3 = L.map('mapArea3').setView([32.881114, -117.237478], 13);
+
+		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map)
+		}).addTo(map1)
 
-		var marker = L.marker([32.885224, -117.239231]).addTo(map);
-		marker.bindPopup("<b>RIMAC</b>");
+		var marker1 = L.marker([32.885224, -117.239231]).addTo(map1);
+		marker1.bindPopup("<b>RIMAC</b>");
 
-		var map = L.map('mapArea2').setView([32.881114, -117.237478], 13);
 
-		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+		var layer2 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map)
+		}).addTo(map2)
 
-		var marker = L.marker([32.885224, -117.239231]).addTo(map);
-		marker.bindPopup("<b>RIMAC</b>");
+		var marker2 = L.marker([32.885224, -117.239231]).addTo(map2);
+		marker2.bindPopup("<b>RIMAC</b>");
 		
-		var map = L.map('mapArea3').setView([32.881114, -117.237478], 13);
-
-		var layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+		
+		var layer3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map)
+		}).addTo(map3)
 
-		var marker = L.marker([32.885224, -117.239231]).addTo(map);
-		marker.bindPopup("<b>RIMAC</b>");
+		var marker3 = L.marker([32.885224, -117.239231]).addTo(map3);
+		marker3.bindPopup("<b>RIMAC</b>");
 	</script>
 
 	<!--JS Bootstrap -->

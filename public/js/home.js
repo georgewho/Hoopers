@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 // need to link the click function/custom checkbox of the star
-$('.form-check-input').on('change', function(e){ // on change of state
+$('.button').on('change', function(e){ // on change of state
  
        e.preventDefault();
        console.log("clicked");
