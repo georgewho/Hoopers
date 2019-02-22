@@ -10,8 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 // need to link the click function/custom checkbox of the star
-$('.button').on('change', function(e){ // on change of state
- 
+$('.checkbox').on('change', function(e){ // on change of state
        e.preventDefault();
        console.log("clicked");
       var endpoint = "/favoritegame/".concat(this.id);

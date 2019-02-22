@@ -87,9 +87,8 @@
 				<div class="col-8">
 					<h3 class="gamename">{{name}}</h3>
 				</div>
-					<div class="form-check">
-					<input class="button" type="checkbox" value="" id="{{id}}">
-					</label>
+					<div class="checkboxcontainer">
+					<input class="checkbox" type="checkbox" id="{{id}}">
 					</div>
 				<div class="col-4">
 					<h5 class="distance">{{distance}}mi</h5>
@@ -104,6 +103,7 @@
 	</div>
 
 	<script>
+		
 		// initialize the map
 		var map1 = L.map('mapArea1').setView([32.881114, -117.237478], 13);
 		var map2 = L.map('mapArea2').setView([32.881114, -117.237478], 13);
