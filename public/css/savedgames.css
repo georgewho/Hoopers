@@ -71,3 +71,15 @@ img {
     border-color: orange;
     color: white;
 }
+
+#mapArea1 {
+    height: 180px;
+}
+
+#mapArea2 {
+    height: 180px;
+}
+
+#mapArea3 {
+    height: 180px;
+}
