@@ -16,7 +16,8 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="/css/mystats.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<!-- JS -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -44,16 +45,24 @@
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/home"><div><i class="fas fa-map-marker-alt"></i></div></a>
+						<a class="nav-link" href="/home">
+							<div><i class="fas fa-map-marker-alt"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/savedgames"><div><i class="fas fa-basketball-ball"></i></div></a>
+						<a class="nav-link" href="/savedgames">
+							<div><i class="fas fa-basketball-ball"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link active" href="/mystats"><div><i class="far fa-chart-bar"></i></div></a>
+						<a class="nav-link active" href="/mystats">
+							<div><i class="far fa-chart-bar"></i></div>
+						</a>
 					</li>
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
+						<a class="nav-link" href="/account">
+							<div><i class="fas fa-user-circle"></i></div>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -95,6 +104,7 @@
 		</table>
 	</div>
 	<br><br><br>
+
 	<!--per game stats-->
 	<div class="container pergame">
 		<h3>Per Game</h3>
@@ -111,7 +121,7 @@
 			<tbody>
 				{{#each stats}}
 				<tr>
-					<td >{{date}}</td>
+					<td>{{date}}</td>
 					<td>{{result}}</td>
 					<td>{{points}}</td>
 					<td>{{trebounds}}</td>

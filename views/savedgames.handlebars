@@ -8,21 +8,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/qHyjd86.png">
 
-	 <!-- jQuery -->
+	<!-- jQuery -->
 
 	<!-- Bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 
 	<!-- CSS -->
-  <link rel="stylesheet" href="/css/savedgames.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/savedgames.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		crossorigin="" />
 
 	<!-- JS -->
 
 </head>
 
 <body>
+	<!-- JS for Leaflet Map API -->
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+		integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+		crossorigin=""></script>
 
 	<!-- header -->
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
@@ -30,7 +40,7 @@
 			<span class="navbar-brand">
 				Saved Games
 			</span>
-				<ul class="nav navbar-nav ml-auto">
+			<ul class="nav navbar-nav ml-auto">
 				<li><a class="btn btn-primary" href="/addgames" role="button">Create Game</a></li>
 			</ul>
 		</div>
@@ -45,24 +55,23 @@
 				<h5>{{time}} &emsp; {{date}}</h5>
 				<h5>{{skill}} &emsp; {{players}}</h5>
 				<h5 class="distance">{{distance}}mi</h5>
-     			<img src="images/{{map}}" alt="gamepic">
+     			<div id="{{mapID}}">
   			  </div>
 			{{/each}}
 	</div>
+<div class="container mygames">
+		<h3>Created Games</h3>
 
-	<div class="container mygames">
-			<h3>Created Games</h3>
-
-			{{#each games}}
-			<div class="game">		
-        		<h3>{{name}}</h3>
-				<h5>{{time}} &emsp; {{date}}</h5>
-				<h5>{{skill}} &emsp; {{players}}</h5>
-				<h5 class="distance">{{distance}}mi</h5>
-     			<img src="images/{{map}}" alt="gamepic">
-  			  </div>
+		{{#each games}}
+		<div class="game">
+			<h3>{{name}}</h3>
+			<h5>{{time}} &emsp; {{date}}</h5>
+			<h5>{{skill}} &emsp; {{players}}</h5>
+			<h5 class="distance">{{distance}}mi</h5>
+			<div id="{{mapID}}">
+			</div>
 			{{/each}}
-	</div>
+		</div>
 
 
 
@@ -84,17 +93,56 @@
 						<a class="nav-link" href="/account"><div><i class="fas fa-user-circle"></i></div></a>
 					</li>
 				</ul>
-			</div>
-		</div>
-	</nav>
+		<h3>Upcoming Games</h3>
+		<!-- how to only call json games for favorited games.. linking to js how?  -->
+	</div>
 
+	
 	
 
 
-	<!--JS Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+		<!-- nav bar bottom -->
+		<nav class="navbar fixed-bottom navbar-expand navbar-light" style="background-color:#e8e8e8">
+			<div class="container">
+				<div class="navbar-collapse collapse" id="homeNav">
+					<ul class="navbar-nav nav-fill w-100">
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/home">
+								<div><i class="fas fa-map-marker-alt"></i></div>
+							</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link active" href="/savedgames">
+								<div><i class="fas fa-basketball-ball"></i></div>
+							</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/mystats">
+								<div><i class="far fa-chart-bar"></i></div>
+							</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="/account">
+								<div><i class="fas fa-user-circle"></i></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<!--JS Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+			crossorigin="anonymous"></script>
 </body>
 
 </html>
