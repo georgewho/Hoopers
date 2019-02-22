@@ -5,10 +5,11 @@ var gamedata = require('../game.json');//change this to only favorited game arra
  * GET favorited games page.
  */
 exports.favoritesview = function(req, res){
-  var favoritedGame;
+  var favoritedGame = {games:[]};
   for(i=0;i<gamedata.games.length; i++){
     if( gamedata.games[i].isFavorited == true){
-      favoritedGame.push(gamedata.games[i]);
+      console.log("favorited game");
+      favoritedGame.games.push(gamedata.games[i]);
     }
   }
   console.log(favoritedGame);

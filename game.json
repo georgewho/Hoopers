@@ -1,5 +1,6 @@
 {
     "games": [{
+            "id":"0",
             "mapID": "mapArea1",
             "name": "Hoop With Me",
             "time": "4:00",
@@ -11,6 +12,7 @@
             "isFavorited":true
         },
         {
+            "id":"1",
             "mapID": "mapArea2",
             "name": "Pro Game",
             "time": "10:00",
@@ -22,6 +24,7 @@
             "isFavorited":false 
         },
         {
+            "id":"2",
             "mapID": "mapArea3",
             "name": "Chilling",
             "time": "13:30",

@@ -31,7 +31,8 @@
 <body>
 	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
 		integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-		crossorigin=""></script>
+		crossorigin="">
+	</script>
 
 	<!-- header -->
 	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
@@ -73,8 +74,6 @@
 	</nav>
 
 
-
-
 	<!-- game listings -->
 	<div class="container-fluid gamelist">
 		{{#each games}}
@@ -85,18 +84,17 @@
 				<div class="col-8">
 					<h3 class="gamename">{{name}}</h3>
 				</div>
-					<div class="custom-control custom-checkbox">
-					<input type="checkbox" class="custom-control-input" id="favorited">
-					<label class="custom-control-label" for="customCheck1"></label>
-				</div>
+					<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="{{id}}">
+					</label>
+					</div>
 				<div class="col-4">
 					<h5 class="distance">{{distance}}</h5>
 				</div>
 			</div>
 			<h5>{{time}} &emsp; {{date}}</h5>
 			<h5>{{skill}} &emsp; {{players}}</h5>
-			<div id="mapArea1">
-			</div>
+			<div id="mapArea1"></div>
 		</div>
 		{{/each}}
 	</div>
@@ -116,9 +114,7 @@
 	</script>
 
 	<!--JS Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
 		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
 		crossorigin="anonymous"></script>
