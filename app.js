@@ -48,17 +48,21 @@ if ('development' == app.get('env')) {
 app.get('/', login.view);
 app.get('/signup', signup.view);
 app.get('/home', home.view);
-app.get('/mystats', mystats.view);
-app.get('/savedgames', savedgames.view);
 app.get('/friends', friends.view);
 app.get('/account', account.view);
+
+app.get('/mystats', mystats.view);
 app.get('/addstatspage', addstats.view);
 app.get('/addstats', addstats.addStatsview);
-app.get('/viewgames', viewgames.view)
 
+app.get('/savedgames', savedgames.view);
+app.get('/savedgamesview', savedgames.favoritesview);
+
+app.get('/viewgames', viewgames.view)
 
 app.get('/addgames', addgames.view);
 app.get('/addgamesview', addgames.addGamesview)
+
 // Example route
 // app.get('/users', user.list);
 

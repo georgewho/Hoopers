@@ -3,32 +3,37 @@
             "mapID": "mapArea1",
             "name": "Hoop With Me",
             "time": "4:00",
-            "date": "2/15/19",
+            "date": "2019-01-22",
             "skill": "Beginner",
             "players": "4v4",
             "map": "game1.png",
-            "distance": "0.4 mi"
+            "distance": "0.4",
+            "isFavorited":true
         },
         {
             "mapID": "mapArea2",
             "name": "Pro Game",
             "time": "10:00",
-            "date": "2/15/19",
+            "date": "2019-02-15",
             "skill": "Advanced",
             "players": "10v10",
             "map": "game1.png",
-            "distance": "1.2 mi"
+            "distance": "1.2",
+            "isFavorited":false 
         },
         {
             "mapID": "mapArea3",
             "name": "Chilling",
             "time": "13:30",
-            "date": "2/16/19",
+            "date": "2019-02-16",
             "skill": "Intermediate",
             "players": "Unlimited",
             "map": "game2.png",
-            "distance": "3.2 mi"
+            "distance": "3.2",
+            "isFavorited":false 
         }
 
     ]
 }
+
+
