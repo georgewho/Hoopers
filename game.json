@@ -1,6 +1,6 @@
 {
     "games": [{
-            "id":"0",
+            "id": "0",
             "mapID": "mapArea1",
             "name": "Hoop With Me",
             "time": "4:00 AM",
@@ -9,10 +9,10 @@
             "players": "4v4",
             "map": "game1.png",
             "distance": "0.4",
-            "isFavorited":false
+            "isFavorited": false
         },
         {
-            "id":"1",
+            "id": "1",
             "mapID": "mapArea2",
             "name": "Pro Game",
             "time": "10:00 PM",
@@ -21,10 +21,10 @@
             "players": "10v10",
             "map": "game1.png",
             "distance": "1.2",
-            "isFavorited":false 
+            "isFavorited": false
         },
         {
-            "id":"2",
+            "id": "2",
             "mapID": "mapArea3",
             "name": "Chilling",
             "time": "1:30 PM",
@@ -33,10 +33,8 @@
             "players": "Unlimited",
             "map": "game2.png",
             "distance": "3.2",
-            "isFavorited":false 
+            "isFavorited": false
         }
 
     ]
 }
-
-
