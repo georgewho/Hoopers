@@ -1,17 +1,25 @@
 {
-    "stats": [{
+    "stats": [
+        
+        {
             "date": "2019-01-19",
             "result": "Win",
             "points": "2",
             "trebounds": "3",
-            "assists": "4"
+            "assists": "4",
+            "pts":29.5,
+            "trb":5.1,
+            "ast":5.5
         },
         {
             "date": "2019-01-19",
             "result": "Win",
             "points": "2",
             "trebounds": "3",
-            "assists": "9"
+            "assists": "9",
+            "pts":"24.5",
+            "trb":"4.5",
+            "ast":"5.7"
         },
         {
             "date": "2019-01-19",

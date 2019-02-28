@@ -17,7 +17,7 @@ exports.addStatsview = function(req, res) {
     };
 
     data.stats.push(newStat);
-    console.log(data);
+    //console.log(data);
     res.render('mystats',data);
 }
 
