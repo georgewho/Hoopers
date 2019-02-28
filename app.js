@@ -68,6 +68,7 @@ app.get('/viewgames', viewgames.view)
 
 app.get('/addgames', addgames.view);
 app.get('/addgamesview', addgames.addGamesview)
+app.get('/viewAlt', home.viewAlt);
 
 // Example route
 // app.get('/users', user.list);
