@@ -17,7 +17,25 @@ exports.addStatsview = function(req, res) {
     };
 
     data.stats.push(newStat);
-    //console.log(data);
+
+    //recalculate average
+    var totalpts = 0;
+    var totaltrb = 0;   
+    var totalast = 0;
+
+   for(i=0;i<data.stats.length; i++){
+       totalpts += parseInt(data.stats[i].points);
+       totaltrb += parseInt(data.stats[i].trebounds);
+       totalast += parseInt(data.stats[i].assists);  
+      }
+     // console.log(totalpts.toFixed(2));
+    data.stats[0].pts = (totalpts/(data.stats.length+1)).toFixed(1);
+    data.stats[0].trb = (totaltrb/(data.stats.length+1)).toFixed(1);
+    data.stats[0].ast = (totalast/(data.stats.length+1)).toFixed(1);
+    data.stats[1].pts = (totalpts/(data.stats.length+1)).toFixed(1);
+    data.stats[1].trb = (totaltrb/(data.stats.length+1)).toFixed(1);
+    data.stats[1].ast = (totalast/(data.stats.length+1)).toFixed(1);
+
     res.render('mystats',data);
 }
 

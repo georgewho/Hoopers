@@ -14,40 +14,40 @@
         {
             "date": "2019-01-19",
             "result": "Win",
-            "points": "2",
-            "trebounds": "3",
-            "assists": "9",
-            "pts":"24.5",
-            "trb":"4.5",
-            "ast":"5.7"
+            "points": 2,
+            "trebounds": 3,
+            "assists": 9,
+            "pts":24.5,
+            "trb":4.5,
+            "ast":5.7
         },
         {
             "date": "2019-01-19",
             "result": "Win",
-            "points": "2",
-            "trebounds": "2",
-            "assists": "1"
+            "points": 2,
+            "trebounds": 2,
+            "assists": 1
         },
         {
             "date": "2019-01-19",
             "result": "Lose",
-            "points": "2",
-            "trebounds": "8",
-            "assists": "7"
+            "points": 2,
+            "trebounds": 8,
+            "assists": 7
         },
         {
             "date": "2019-02-19",
             "result": "Win",
-            "points": "2",
-            "trebounds": "2",
-            "assists": "3"
+            "points": 2,
+            "trebounds": 2,
+            "assists": 3
         },
         {
             "date": "2019-03-19",
             "result": "Tie",
-            "points": "2",
-            "trebounds": "7",
-            "assists": "2"
+            "points": 2,
+            "trebounds": 7,
+            "assists": 2
         }
     ]
 }

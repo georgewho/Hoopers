@@ -7,7 +7,6 @@ var data = require('../game.json');
 
 exports.favorited = function(req, res) {
     //console.log(data);
-    var favoritedGame;
     //console.log(req);
     //console.log(req.params.id);
     
