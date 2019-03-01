@@ -25,6 +25,7 @@
 
 
 	<!-- JS -->
+	<script src='/js/home.js'></script>
 
 </head>
 
@@ -54,7 +55,7 @@
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link" href="/home">
+						<a class="nav-link" href="/viewAlt">
 							<div><i class="fas fa-map-marker-alt"></i></div>
 						</a>
 					</li>
@@ -124,23 +125,36 @@
 			<div class="text-center">
 				<button type="submit" id="submitbtn" class="btn btn-primary">Save Game</input required>
 			</div>
+
+			<div class="form-group">
+				<input type="hidden" name="lat" id="lat" value="32.871295">
+				<input type="hidden" name="lon" id="lon" value="-117.233355">
+			</div>
 		</form>
 	</div>
 
 	<script>
 		//initialize map
-		var map1 = L.map('userMap').setView([32.881114, -117.237478], 13);
+		var mapAdd = L.map('userMap').setView([32.881114, -117.237478], 13);
 
 		//create layers and add to map
 		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 			subdomains: 'abcd',
 			maxZoom: 19
-		}).addTo(map1)
+		}).addTo(mapAdd)
 
 		//create a marker where the user clicks
 		var newMarker;
-		map1.on("click", function (event) {
+		mapAdd.on("click", function (event) {
+			var clicklat = event.latlng.lat;
+			var clicklng = event.latlng.lng;
+			var clicklat = clicklat.toString();
+			var clicklng = clicklng.toString();
+
+			document.getElementById("lat").value = clicklat;
+			document.getElementById("lon").value = clicklng;
+
 			if (newMarker) {
 				newMarker.setLatLng(event.latlng);
 				return;
@@ -148,7 +162,7 @@
 
 			newMarker = L.marker(event.latlng, {
 				draggable: true
-			}).addTo(map1).on("click", function () {
+			}).addTo(mapAdd).on("click", function () {
 				event.originalEvent.stopPropagation();
 			});
 		});

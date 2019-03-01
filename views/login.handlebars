@@ -46,8 +46,17 @@
         <input type="text" placeholder="Enter Email" name="email" required>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
+<<<<<<< HEAD
        <a class="loggingin" href="/home"> <button type="submit" class="registerbtn">Log In</button></a>
 	   <a class="loggingin"> <button type="submit" onclick="fb_login()" class="registerbtn">Use Facebook</button></a>
+=======
+       <a class="loggingin" href="/viewAlt"> <button type="submit" class="registerbtn">Log In</button></a>
+	   <div style="text-align: center;">
+	   <fb:login-button 
+ 			scope="public_profile,email"
+ 		 	onlogin="checkLoginState();">
+		</fb:login-button>
+>>>>>>> ffb53183a92ec69809e0651b32083ffa58902687
 		</div>
     </div>
    
