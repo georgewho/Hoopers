@@ -7,10 +7,14 @@ h6,
 p {
     font-family: 'Montserrat', sans-serif;
 }
-body {
-    overscroll-behavior-y: none;
-    padding-top: 70px;
 
+body {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overscroll-behavior-y: none;
+    position:fixed;
 }
 
 /*top navbar elements*/
