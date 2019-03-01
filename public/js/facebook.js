@@ -1,3 +1,25 @@
+//facebook login
+function fb_login() {
+    FB.login(function(response){
+        checkLoginState();
+    });
+}
+
+//facebook logout
+function fb_logout() {
+    FB.getLoginStatus(function(response) {
+        if (response && response.status === 'connected') {
+            FB.logout(function(response) {
+                console.log('Successfully logged out of Facebook');
+                window.location.replace("/login");
+            });
+        }
+        else {
+            window.location.replace("/login");
+        }
+    });
+}
+
 function checkLoginState() {
     FB.getLoginStatus(function (response) {
         statusChangeCallback(response);
@@ -29,4 +51,4 @@ function changeUser(response) {
     }
 
     window.location.replace("/home");
-  }
+}
