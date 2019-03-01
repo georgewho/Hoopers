@@ -152,6 +152,7 @@
 
 		<script>
 			var marker = L.marker([{{lat}}, {{lon}}]).addTo(map1);
+			marker.bindPopup("{{name}}");
 		</script>
 		{{/each}}
 	</div>
