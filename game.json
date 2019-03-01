@@ -9,9 +9,9 @@
             "players": "4v4",
             "map": "game1.png",
             "distance": "0.4",
+            "isFavorited": false,
             "lat": "32.885224",
-            "lon": "-117.239231",
-            "isFavorited": false
+            "lon": "-117.239231"
         },
         {
             "id": "1",
@@ -23,9 +23,9 @@
             "players": "10v10",
             "map": "game1.png",
             "distance": "1.2",
+            "isFavorited": false,
             "lat": "32.878248",
-            "lon": "-117.233341",
-            "isFavorited": false
+            "lon": "-117.233341"
         },
         {
             "id": "2",
@@ -37,9 +37,9 @@
             "players": "Unlimited",
             "map": "game2.png",
             "distance": "3.2",
+            "isFavorited": false,
             "lat": "32.877591",
-            "lon": "-117.241971",
-            "isFavorited": false
+            "lon": "-117.241971"
         }
 
     ]

@@ -4,9 +4,9 @@ var data = require('../game.json');
 /*
  * GET home page.
  */
-
+//not being called??
 exports.favorited = function(req, res) {
-    //console.log(data);
+    console.log(data);
     //console.log(req);
     //console.log(req.params.id);
     

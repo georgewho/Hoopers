@@ -69,18 +69,18 @@ img {
 }
 
 .checkboxcontainer {
-    display: block;
     position: relative;
-    padding-top: 1%;
-    padding-left: 22%;
 }
 
 .checkbox {
-    position:absolute;
-    height: 20px;
-    width: 20px;
+    margin-left:70%;
+    height: 25px;
+    width: 25px;
 }
 
+.savegame{
+    margin:0;
+}
 @media only screen and (max-device-width: 480px) {}
 
 #mainMap {
