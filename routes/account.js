@@ -1,5 +1,5 @@
 /*
- * GET home page.
+ * GET account page.
  */
 
 exports.view = function(req, res){
