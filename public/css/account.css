@@ -9,7 +9,8 @@ p {
 }
 body {
     overscroll-behavior-y: none;
-    padding-top: 15%;;
+    padding-top: 70px;
+
 }
 
 /*top navbar elements*/

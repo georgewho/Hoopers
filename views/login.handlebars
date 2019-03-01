@@ -18,6 +18,17 @@
 	<link rel="stylesheet" href="/css/login.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
 		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-134957380-2', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
 
 	<!-- JS -->
 	{{> facebook}}
@@ -36,11 +47,7 @@
         <input type="password" placeholder="Enter Password" name="psw" required>
 
        <a class="loggingin" href="/home"> <button type="submit" class="registerbtn">Log In</button></a>
-	   <div style="text-align: center;">
-	   <fb:login-button 
- 			scope="public_profile,email"
- 		 	onlogin="checkLoginState();">
-		</fb:login-button>
+	   <a class="loggingin"> <button type="submit" onclick="fb_login()" class="registerbtn">Use Facebook</button></a>
 		</div>
     </div>
    

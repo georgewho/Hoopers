@@ -25,7 +25,7 @@
 		})();
 	</script>
 	<script>utmx('url', 'A/B');</script>
-End of Google Analytics Content Experiment code -->
+	End of Google Analytics Content Experiment code -->
 
 	<title>Find Games - Hoopers</title>
 	<meta charset="utf-8">
@@ -88,7 +88,7 @@ End of Google Analytics Content Experiment code -->
 			<div class="navbar-collapse collapse" id="homeNav">
 				<ul class="navbar-nav nav-fill w-100">
 					<li class="nav-item text-center">
-						<a class="nav-link active" href="/home">
+						<a class="nav-link active" href="/viewAlt">
 							<div><i class="fas fa-map-marker-alt"></i></div>
 						</a>
 					</li>
@@ -123,6 +123,16 @@ End of Google Analytics Content Experiment code -->
 
 		<div id="mainMap">
 		</div>
+		<script>
+			// initialize the map
+			var map1 = L.map('mainMap').setView([32.881114, -117.237478], 13);
+
+			var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+				subdomains: 'abcd',
+				maxZoom: 19
+			}).addTo(map1)
+		</script>
 		{{#each games}}
 		<div class="game">
 			<div class="row">
@@ -139,29 +149,15 @@ End of Google Analytics Content Experiment code -->
 			<h5>{{time}} &emsp; {{date}}</h5>
 			<h5>{{skill}} &emsp; {{players}}</h5>
 		</div>
+
+		<script>
+			var marker = L.marker([{{lat}}, {{lon}}]).addTo(map1);
+			marker.bindPopup("{{name}}");
+		</script>
 		{{/each}}
 	</div>
 
-	<script>
 
-		// initialize the map
-		var map1 = L.map('mainMap').setView([32.881114, -117.237478], 13);
-
-		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map1)
-
-		var marker1 = L.marker([32.885224, -117.239231]).addTo(map1);
-		marker1.bindPopup("<b>RIMAC Gym</b><br>Hoop With Me").openPopup();
-
-		var marker2 = L.marker([32.878248, -117.233341]).addTo(map1);
-		marker2.bindPopup("<b>Sixth College Courts</b><br>Pro game").openPopup();
-
-		var marker3 = L.marker([32.877591, -117.241971]).addTo(map1);
-		marker3.bindPopup("<b>Muir Courts</b><br>Chilling").openPopup();
-	</script>
 
 	{{else}}
 	<!-- game listings -->
@@ -217,6 +213,7 @@ End of Google Analytics Content Experiment code -->
 		}).addTo(map3)
 		var marker3 = L.marker([32.885224, -117.239231]).addTo(map3);
 		marker3.bindPopup("<b>RIMAC</b>");
+
 	</script>
 	{{/if}}
 
