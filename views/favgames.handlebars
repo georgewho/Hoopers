@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Saved Games - Hoopers</title>
+	<title>Upcoming Games - Hoopers</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/qHyjd86.png">
@@ -100,39 +100,6 @@
 		</nav>
 
 
-	<script>
-		// initialize the map
-		var map1 = L.map('mapArea1').setView([32.881114, -117.237478], 13);
-		var map2 = L.map('mapArea2').setView([32.881114, -117.237478], 13);
-		var map3 = L.map('mapArea3').setView([32.881114, -117.237478], 13);
-
-		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map1)
-
-		var marker1 = L.marker([32.885224, -117.239231]).addTo(map1);
-		marker1.bindPopup("<b>RIMAC</b>");
-
-
-		var layer2 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map2)
-
-		var marker2 = L.marker([32.885224, -117.239231]).addTo(map2);
-		marker2.bindPopup("<b>RIMAC</b>");
-		
-		
-		var layer3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map3)
-
-	</script>
 
     
 		<!--JS Bootstrap -->
