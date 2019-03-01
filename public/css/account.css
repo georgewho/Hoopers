@@ -9,9 +9,7 @@ p {
 }
 body {
     overscroll-behavior-y: none;
-    overflow: auto;
     padding-top: 70px;
-    padding-bottom: 10%;
 
 }
 
