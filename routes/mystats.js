@@ -14,11 +14,11 @@ exports.view = function(req, res) {
        totaltrb += parseInt(data.stats[i].trebounds);
        totalast += parseInt(data.stats[i].assists);  
       }
-    data.stats[0].pts = (totalpts/(data.stats.length+1)).toFixed(1);
-    data.stats[0].trb = (totaltrb/(data.stats.length+1)).toFixed(1);
-    data.stats[0].ast = (totalast/(data.stats.length+1)).toFixed(1);
-    data.stats[1].pts = (totalpts/(data.stats.length+1)).toFixed(1);
-    data.stats[1].trb = (totaltrb/(data.stats.length+1)).toFixed(1);
-    data.stats[1].ast = (totalast/(data.stats.length+1)).toFixed(1);
+    data.stats[0].pts = (totalpts/(data.stats.length)).toFixed(1);
+    data.stats[0].trb = (totaltrb/(data.stats.length)).toFixed(1);
+    data.stats[0].ast = (totalast/(data.stats.length)).toFixed(1);
+    data.stats[1].pts = (totalpts/(data.stats.length)).toFixed(1);
+    data.stats[1].trb = (totaltrb/(data.stats.length)).toFixed(1);
+    data.stats[1].ast = (totalast/(data.stats.length)).toFixed(1);
     res.render('mystats',data);
 }
