@@ -13,31 +13,21 @@ body {
     padding-top: 75px;
 }
 
-
 /*bottom navbar elements*/
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    line-height: 20px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    line-height: 20px;
-}
 
 .fixed-bottom {
     height: 50px;
     padding-left: 0px;
     padding-right: 0px;
 }
-
-.navbar-light .navbar-brand {
-    color: black;
-    font-size: 1.75rem;
+.fa,
+.fas,
+.far{
+    color:white;
 }
-
+.active .far{
+    color:#ffae44;
+}
 
 /* all stats table */
 

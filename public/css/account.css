@@ -27,6 +27,12 @@ body {
     font-size: 1.75rem;
 }
 
+.btn-primary {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+
 /*bottom navbar elements*/
 
 .fixed-bottom {
@@ -34,17 +40,15 @@ body {
     padding-left: 0px;
     padding-right: 0px;
 }
-
-.navbar-light .navbar-brand {
-    color: black;
-    font-size: 1.75rem;
+.fa,
+.fas,
+.far{
+    color:white;
+}
+.active .fas{
+    color:#ffae44;
 }
 
-.btn-primary {
-    background-color: orange;
-    color: white;
-    border-color: orange;
-}
 
 /*body*/
 .userinfo{

@@ -30,6 +30,7 @@ col {
 }
 
 
+
 /*bottom navbar elements*/
 
 .fixed-bottom {
@@ -37,7 +38,14 @@ col {
     padding-left: 0px;
     padding-right: 0px;
 }
-
+.fa,
+.fas,
+.far{
+    color:white;
+}
+.active .fas{
+    color:#ffae44;
+}
 
 /*game listings*/
 
