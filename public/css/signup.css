@@ -8,59 +8,84 @@ h5,
 h6,
 p {
     font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
+
+input{
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  font-size: 20px;
+}
+
+input::placeholder{
+  padding-bottom:5px;
+  vertical-align: baseline;
+  color:#CCE1F7;
+  border-bottom: 1px solid #CCE1F7;
+}
+
 body {
-    overscroll-behavior-y: none;
+  background:#166BA8;
+  overscroll-behavior-y: none;
 }
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 20px;
 }
 
+.input{
+  margin-bottom:20px;
+}
+
+img{
+  opacity: 0.9;
+}
+
+.back{
+  color:#ffa021;
+  padding-left:20px;
+}
+.hoopers{
+  padding-top: 30px;
+  display: inline-block;
+  padding: 50px;
+  width: 100px; 
+}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 20px;
+  margin: 5px 0 0 0;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  border:none;
+  background: transparent;
+  color:#CCE1F7;
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
+  background-color:#295988;
   outline: none;
+  color:#CCE1F7;
 }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: orange;
-  color: white;
-  padding: 16px 20px;
+  background-color: #FFA021;
+  color: #3B81C7;
+  padding: 20px;
   margin: 8px 0;
   border: none;
   width: 100%;
   opacity: 0.9;
+  border-radius: 30px;
 }
 
+.registerbtn h5{
+  font-weight: bold;
+}
 .registerbtn:hover {
   opacity:1;
-}
+  color: white;
 
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  margin-top:45%;
-  background-color: #f1f1f1;
-  text-align: center;
 }

@@ -39,21 +39,24 @@
 
     <div class="container fluid">
     <div class="container">
-        <img src="/images/hoopers.jpg" alt="templogo">
-        <hr>
+		<div class="hoopers">
+        <img src="/images/hoopers.png" alt="templogo">
+		</div>
 
-
+	<div class="input">
         <input type="text" placeholder="Enter Email" name="email" required>
         <input type="password" placeholder="Enter Password" name="psw" required>
-
-       <a class="loggingin" href="/home"> <button type="submit" class="registerbtn">Log In</button></a>
-	   <a class="loggingin"> <button type="submit" onclick="fb_login()" class="registerbtn">Use Facebook</button></a>
+	</div>
+	<div class="buttons">	
+       <a class="loggingin" href="/home"> <button type="submit" class="registerbtn"><h5>Log In</h5></button></a>
+	   <a class="loggingin"> <button type="submit" onclick="fb_login()" class="registerbtn"><h5>Use Facebook</h5></button></a>
+		</div>	
 		</div>
     </div>
-   
-    <hr>
-    <div class="container signin">
-		  <p>Don't have an account? <a class="loggingin" href="/signup"> Sign Up</a>.</p>
+
+	<nav class="navbar fixed-bottom signin">
+		 <p>Don't have an account? <a class="loggingin" href="/signup"> Sign Up</a>.</p>
+	</nav>	 
     </div>
     </div>
 
