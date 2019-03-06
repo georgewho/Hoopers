@@ -8,14 +8,10 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-h3 b {
-    /*font-size: 1.0rem;*/
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
-    padding-top: 70px;
+    padding-top: 50px;
     overscroll-behavior-y: none;
+    background-color:#F4F4F4;
 }
 
 col {
@@ -29,8 +25,8 @@ col {
     height: 67.6px;
 }
 
-.navbar-brand {
-    font-size: 1.75rem;
+.navbar-brand h2{
+  color:white;
 }
 
 
@@ -45,18 +41,19 @@ col {
 
 /*game listings*/
 
-img {
-    padding: 5px;
-    width: 400px;
-}
-
 .game {
-    box-shadow: 0 8px 6px -6px black;
+   /* box-shadow: 0 8px 6px -6px black;*/
     overflow: hidden;
     color: black;
-    background-color: lightblue;
+    background-color: #FEFEFE !important;
+    padding:20px;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.gamename{
+    font-size:28px;
+    color: #444444;
 }
 
 .gamelist {
@@ -73,13 +70,19 @@ img {
 }
 
 .checkbox {
-    margin-left:70%;
+    position:absolute;
+    margin:0;
+    top: -80px;
+    left: 310px;
     height: 25px;
     width: 25px;
 }
 
 .savegame{
-    margin:0;
+
+    display: inline-block;
+    padding-top:8px;
+
 }
 @media only screen and (max-device-width: 480px) {}
 
