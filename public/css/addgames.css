@@ -1,9 +1,33 @@
-body {
-    padding-top: 15%;
-    overscroll-behavior-y: none;
-    padding-bottom: 20%;
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
 
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overscroll-behavior-y: none;
+    background-color:#F4F4F4;
+}
+.form-group{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.form-control{
+    color:#444444;
+    border:0;
+    height:50px;
+}
+label{
+    color:#444444;  
+    font-size:20px;
+}
 
 /*bottom navbar elements*/
 
@@ -13,15 +37,40 @@ body {
     padding-right: 0px;
 }
 
-.navbar-light .navbar-brand {
-    color: black;
-    font-size: 1.75rem;
+.fa,
+.fas,
+.far{
+    color:white;
+}
+.active .fas{
+    color:#ffae44;
 }
 
-.fa-plus:before {
-    padding-right: 30px;
+/* top navbar elements*/
+.fixed-top {
+    height: 67.6px;
 }
 
+.navbar-brand h2{
+  color:white;
+}
+
+.btn-primary p{
+    font-size:16px;
+ }
+ .btn-primary {
+     border-radius: 40px;
+     padding:15px;
+     background-color: #FFA021;
+     border: none;
+     color: white;
+ }
+ 
+
+#arrow{
+    padding-right: 10px;
+}
+/*body*/
 #userMap {
     height: 180px;
 }

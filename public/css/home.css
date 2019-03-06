@@ -10,7 +10,6 @@ p {
 
 body {
     padding-top: 50px;
-    padding-top: 50px;
     overscroll-behavior-y: none;
     background-color:#F4F4F4;
 }
@@ -81,7 +80,7 @@ col {
 .checkbox {
     position:absolute;
     margin:0;
-    top: -80px;
+    top: -85px;
     left: 310px;
     height: 25px;
     width: 25px;

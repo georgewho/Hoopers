@@ -11,7 +11,7 @@ p {
 
 body {
     padding-top: 50px;
-    padding-top: 50px;
+    padding-bottom: 50px;
     overscroll-behavior-y: none;
     background-color:#F4F4F4;
 }
@@ -33,7 +33,7 @@ body {
     border-radius: 40px;
     padding-top:10px;
     padding-bottom:10px;
-    background-color: orange;
+    background-color: #FFA021;
     border: none;
     color: white;
 }
@@ -68,11 +68,16 @@ body {
 
 .game {
     /* box-shadow: 0 8px 6px -6px black;*/
-    outline-offset: -30px;
      overflow: hidden;
-     color: black;
+     color: #444444;
      background-color: #FEFEFE !important;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     border: 20px solid #FEFEFE;
      border-bottom: 1px solid gray;
+     padding:10px;
+     padding-bottom:25px;
  }
 
 #mapArea1 {

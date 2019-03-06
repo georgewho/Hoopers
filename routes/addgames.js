@@ -16,7 +16,6 @@ exports.addGamesview = function(req, res) {
             "date": req.query.date,
             "skill": req.query.skill,
             "players": req.query.players,
-            "distance": req.query.distance,
             "lat": req.query.lat,
             "lon": req.query.lon,
             "isFavorited": false
