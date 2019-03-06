@@ -9,8 +9,10 @@ p {
 }
 
 body {
+    padding-top: 50px;
+    padding-top: 50px;
     overscroll-behavior-y: none;
-    padding-top: 75px;
+    background-color:#F4F4F4;
 }
 
 /*bottom navbar elements*/

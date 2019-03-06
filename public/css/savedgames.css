@@ -6,14 +6,37 @@ h5,
 h6,
 p {
     font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
 
 body {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-top: 50px;
     overscroll-behavior-y: none;
+    background-color:#F4F4F4;
 }
 
+/*top navbar elements*/
+
+.fixed-top {
+    height: 67.6px;
+}
+
+.navbar-brand h2{
+  color:white;
+}
+
+.btn-primary p{
+   font-size:13px;
+}
+.btn-primary {
+    border-radius: 40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
 
 /*bottom navbar elements*/
 
@@ -33,38 +56,24 @@ body {
 
 /*body*/
 
-.distance {
-    padding-top: 5px;
-}
-
-img {
-    padding: 5px;
-    width: 400px;
-}
-
 .upcominggames {
-    padding-bottom: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .mygames {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .game {
-    background-color: lightblue;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    box-shadow: 0 8px 6px -6px black;
-    overflow: hidden;
-    color: black;
-}
-
-.btn-primary {
-    background-color: orange;
-    border-color: orange;
-    color: white;
-}
+    /* box-shadow: 0 8px 6px -6px black;*/
+    outline-offset: -30px;
+     overflow: hidden;
+     color: black;
+     background-color: #FEFEFE !important;
+     border-bottom: 1px solid gray;
+ }
 
 #mapArea1 {
     height: 180px;
