@@ -55,7 +55,7 @@ body {
 
 /*body*/
 .userinfo{
-    position:center;
+    position:left;
     text-align:center;
     padding-top:10%;
     padding-bottom: 20%;
@@ -63,4 +63,21 @@ body {
 
 .comments{
     padding-left: 5%;
+}
+.form-group{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.form-control{
+    color:#444444;
+    border:0;
+    height:50px;
+}
+label{
+    color:#444444;  
+    font-size:20px;
+}
+
+img{
+    padding:10px;
 }

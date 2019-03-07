@@ -95,6 +95,7 @@ col {
 @media only screen and (max-device-width: 480px) {}
 
 #mainMap {
+    margin-top:10px;
     height: 225px;
 }
 
