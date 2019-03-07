@@ -35,14 +35,13 @@
 		crossorigin=""></script>
 
 	<!-- header -->
-	<nav class="navbar fixed-top navbar-expand navbar-light" style="background-color:#e8e8e8">
+	<nav class="navbar fixed-top navbar-expand" style="background-color:#3784D4">
 		<div class="navbar-collapse collapse" id="headerText">
 			<span class="navbar-brand">
-				Upcoming Games
+				<h2>Saved Games</h2>
 			</span>
 		</div>
 	</nav>
-
 
 	<div class="container upcominggames">
 		{{#each games}}
@@ -54,12 +53,10 @@
 			</div>
 			<h5>{{time}} &emsp; {{date}}</h5>
 			<h5>{{skill}} &emsp; {{players}}</h5>
-			<div id="{{mapID}}">
-			</div>
+
 		</div>
 		{{/each}}
 	</div>
-
 
 
 

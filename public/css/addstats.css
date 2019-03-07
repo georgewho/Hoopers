@@ -1,6 +1,7 @@
 body {
-    padding-top: 15%;
+    padding-top: 50px;
     overscroll-behavior-y: none;
+    background-color:#F4F4F4;
 }
 
 h2,
@@ -11,43 +12,58 @@ h5,
 h6,
 p {
     font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
 
+/*top navbar elements*/
+
+.fixed-top {
+    height: 67.6px;
+}
+
+.navbar-brand h2{
+  color:white;
+}
+
+#arrow{
+    padding-right: 10px;
+}
 
 /*bottom navbar elements*/
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-    line-height: 20px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    line-height: 20px;
-}
 
 .fixed-bottom {
     height: 50px;
     padding-left: 0px;
     padding-right: 0px;
 }
-
-.navbar-light .navbar-brand {
-    color: black;
-    font-size: 1.75rem;
-    padding-left: 10px;
+.fa,
+.fas,
+.far{
+    color:white;
+}
+.active .far{
+    color:#ffae44;
 }
 
-.fa-plus:before {
-    padding-right: 30px;
-}
 
-.form-control {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+/*form*/
+#addStatsForm{
+    margin-top:10%;
 }
+.form-group{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:5px;
+}
+.form-control{
+    color:#444444;
+    border:0;
+    height:50px;
+}
+label{
+    color:#444444;  
+    font-size:20px;
+}
+ 
 
 input[type=date],
 input[type=datetime-local],
@@ -60,19 +76,14 @@ input[type=time] {
     width: 100%;
 }
 
-.btn-primary {
-    color: #111;
-    background-color: #ffbc3d;
-    width: 200px;
-    border: 0px;
-    border-radius: 5px;
-    font-weight: bolder;
-}
+.btn-primary p{
+    font-size:16px;
+ }
+ .btn-primary {
+     border-radius: 40px;
+     padding:15px;
+     background-color: #FFA021;
+     border: none;
+     color: white;
+ }
 
-input[type="date" i],
-input[type="datetime-local" i],
-input[type="month" i],
-input[type="time" i],
-input[type="week" i] {
-    border-color: #ced4da;
-}
