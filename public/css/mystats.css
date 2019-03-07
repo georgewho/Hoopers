@@ -13,6 +13,7 @@ body {
     padding-top: 75px;
 }
 
+
 /*bottom navbar elements*/
 
 .fixed-bottom {
@@ -20,14 +21,17 @@ body {
     padding-left: 0px;
     padding-right: 0px;
 }
+
 .fa,
 .fas,
-.far{
-    color:white;
+.far {
+    color: white;
 }
-.active .far{
-    color:#ffae44;
+
+.active .far {
+    color: #ffae44;
 }
+
 
 /* all stats table */
 
@@ -91,4 +95,8 @@ table#linedtable td {
     background-color: orange;
     color: white;
     border-color: orange;
+}
+
+body {
+    padding-top: 100px;
 }
