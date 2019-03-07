@@ -6,7 +6,7 @@
 	<!-- Google Analytics Content Experiment code -->
 	<script>function utmx_section() { } function utmx() { } (function () {
 			var
-			k = '190641859-0', d = document, l = d.location, c = d.cookie;
+				k = '190641859-0', d = document, l = d.location, c = d.cookie;
 			if (l.search.indexOf('utm_expid=' + k) > 0) return;
 			function f(n) {
 				if (c) {
@@ -25,7 +25,7 @@
 		})();
 	</script>
 	<script>utmx('url', 'A/B');</script>
- <!-- End of Google Analytics Content Experiment code -->
+	<!-- End of Google Analytics Content Experiment code -->
 
 	<title>Find Games - Hoopers</title>
 	<meta charset="utf-8">
@@ -145,8 +145,8 @@
 			</div>
 			<div class="row">
 				<div class="col-10">
-				<h5>{{time}} &emsp; {{date}}</h5>
-				<h5>{{skill}} &emsp; {{players}}</h5>
+					<h5>{{time}} &emsp; {{date}}</h5>
+					<h5>{{skill}} &emsp; {{players}}</h5>
 				</div>
 			</div>
 
@@ -156,7 +156,7 @@
 		</div>
 
 		<script>
-			var marker = L.marker([{{lat}}, {{lon}}]).addTo(map1);
+			var marker = L.marker([{{ lat }}, { { lon } }]).addTo(map1);
 			marker.bindPopup("{{name}}");
 		</script>
 		{{/each}}
@@ -179,8 +179,8 @@
 			</div>
 			<div class="row">
 				<div class="col-10">
-				<h5>{{time}} &emsp; {{date}}</h5>
-				<h5>{{skill}} &emsp; {{players}}</h5>
+					<h5>{{time}} &emsp; {{date}}</h5>
+					<h5>{{skill}} &emsp; {{players}}</h5>
 				</div>
 			</div>
 
@@ -189,13 +189,13 @@
 			</div>
 
 
-			<div class = "row">
+			<div class="row">
 				<div class="col-12">
 					<div id="{{mapID}}"></div>
 				</div>
 			</div>
 		</div>
-		
+
 		{{/each}}
 	</div>
 

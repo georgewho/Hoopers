@@ -6,15 +6,17 @@ h4,
 h5,
 h6,
 p {
-    margin:0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
     padding-top: 50px;
+    padding-bottom: 100px;
     overscroll-behavior-y: none;
-    background-color:#F4F4F4;
+    background-color: #F4F4F4;
 }
+
 
 /*top navbar elements*/
 
@@ -22,28 +24,25 @@ body {
     height: 67.6px;
 }
 
-<<<<<<< HEAD
-
-=======
-.navbar-brand h2{
-  color:white;
+.navbar-brand h2 {
+    color: white;
 }
 
-.btn-primary p{
-    font-size:13px;
- }
- .btn-primary {
-     margin-bottom:5px;
-     border-radius: 30px;
-     padding-top:5px;
-     padding-bottom:5px;
-     background-color: #FFA021;
-     border: none;
-     color: white;
- }
+.btn-primary p {
+    font-size: 13px;
+}
 
- 
->>>>>>> refs/remotes/origin/master
+.btn-primary {
+    margin-bottom: 5px;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFA021;
+    border: none;
+    color: white;
+}
+
+
 /*bottom navbar elements*/
 
 .fixed-bottom {
@@ -64,25 +63,31 @@ body {
 
 
 /* all stats table */
-.allstats{
-    margin-top:10%;
+
+.allstats {
+    margin-top: 10%;
 }
-.allstats h5{
-    color:black;
+
+.allstats h5 {
+    color: black;
 }
-table{
-    font-size:20px;
-    background-color:white;
-    color:#444444;
+
+table {
+    font-size: 20px;
+    background-color: white;
+    color: #444444;
 }
+
 table#dottedtable {
     border-collapse: collapse;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
-table th{
-    color:#444444;
+
+table th {
+    color: #444444;
 }
+
 table#dottedtable td,
 table#dottedtable th {
     border: 1px dashed #444444;
@@ -111,9 +116,11 @@ table#dottedtable tr th:last-child {
 
 
 /*per games table*/
-.pergame h3{
-    color:black;
+
+.pergame h3 {
+    color: black;
 }
+
 table#linedtable {
     border-collapse: collapse;
     width: 100%;
@@ -128,18 +135,3 @@ table#linedtable td {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-
-
-<<<<<<< HEAD
-.btn-primary {
-    background-color: orange;
-    color: white;
-    border-color: orange;
-}
-
-body {
-    padding-top: 100px;
-}
-=======
->>>>>>> refs/remotes/origin/master
