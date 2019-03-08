@@ -17,23 +17,9 @@ function initializePage() {
         console.log(endpoint);
         $.get(endpoint, callback);
     })
-
-    //listen for clicks on map for google analytics
-    $("#mainMap").click(clickMap);
-    $("#mapArea1").click(clickMap);
-    $("#mapArea2").click(clickMap);
-    $("#mapArea3").click(clickMap);
 }
 
 
 function callback(result) {
     console.log("callabck");
-}
-
-//sends an event to analytics whenever map is clicked
-function clickMap(e) {
-    e.preventDefault();
-    console.log("clicked on the map!");
-
-    ga("send", "event", 'map', 'click');
 }

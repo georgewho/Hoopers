@@ -3,29 +3,6 @@
 <html>
 
 <head>
-	<!-- Google Analytics Content Experiment code -->
-	<script>function utmx_section() { } function utmx() { } (function () {
-			var
-				k = '190641859-0', d = document, l = d.location, c = d.cookie;
-			if (l.search.indexOf('utm_expid=' + k) > 0) return;
-			function f(n) {
-				if (c) {
-					var i = c.indexOf(n + '='); if (i > -1) {
-						var j = c.
-							indexOf(';', i); return escape(c.substring(i + n.length + 1, j < 0 ? c.
-								length : j))
-					}
-				}
-			} var x = f('__utmx'), xx = f('__utmxx'), h = l.hash; d.write(
-				'<sc' + 'ript src="' + 'http' + (l.protocol == 'https:' ? 's://ssl' :
-					'://www') + '.google-analytics.com/ga_exp.js?' + 'utmxkey=' + k +
-				'&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().
-					valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
-				'" type="text/javascript" charset="utf-8"><\/sc' + 'ript>')
-		})();
-	</script>
-	<script>utmx('url', 'A/B');</script>
-	<!-- End of Google Analytics Content Experiment code -->
 
 	<title>Find Games - Hoopers</title>
 	<meta charset="utf-8">
@@ -50,20 +27,6 @@
 	<!-- JS -->
 	<script src='/js/bootstrap.min.js'></script>
 	<script src='/js/home.js'></script>
-
-	<!-- Google Analytics -->
-	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-135275057-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	<!-- End Google Analytics -->
 
 </head>
 
@@ -117,7 +80,6 @@
 		</div>
 	</nav>
 
-	{{#if viewAlt}}
 	<!-- game listings -->
 	<div class="container-fluid gamelist">
 
@@ -156,82 +118,11 @@
 		</div>
 
 		<script>
-			var marker = L.marker([{{ lat }}, { { lon } }]).addTo(map1);
+			var marker = L.marker([{{ lat }}, {{ lon }}]).addTo(map1);
 			marker.bindPopup("{{name}}");
 		</script>
 		{{/each}}
 	</div>
-
-
-
-	{{else}}
-	<!-- game listings -->
-	<div class="container-fluid gamelist">
-		{{#each games}}
-		<div class="game">
-			<div class="row">
-				<div class="col-8">
-					<p class="gamename">{{name}}</p>
-				</div>
-				<div class="col-4">
-					<p class="savegame">Save Game</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-10">
-					<h5>{{time}} &emsp; {{date}}</h5>
-					<h5>{{skill}} &emsp; {{players}}</h5>
-				</div>
-			</div>
-
-			<div class="checkboxcontainer">
-				<input class="checkbox" type="checkbox" id="{{id}}">
-			</div>
-
-
-			<div class="row">
-				<div class="col-12">
-					<div id="{{mapID}}"></div>
-				</div>
-			</div>
-		</div>
-
-		{{/each}}
-	</div>
-
-
-	<script>
-
-		// initialize the map
-		var map1 = L.map('mapArea1').setView([32.881114, -117.237478], 13);
-		var map2 = L.map('mapArea2').setView([32.881114, -117.237478], 13);
-		var map3 = L.map('mapArea3').setView([32.881114, -117.237478], 13);
-		var layer1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map1)
-		var marker1 = L.marker([32.885224, -117.239231]).addTo(map1);
-		marker1.bindPopup("<b>RIMAC</b>");
-		var layer2 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map2)
-		var marker2 = L.marker([32.885224, -117.239231]).addTo(map2);
-		marker2.bindPopup("<b>RIMAC</b>");
-
-
-		var layer3 = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map3)
-		var marker3 = L.marker([32.885224, -117.239231]).addTo(map3);
-		marker3.bindPopup("<b>RIMAC</b>");
-
-	</script>
-	{{/if}}
 
 	<!--JS Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
