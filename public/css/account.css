@@ -66,10 +66,12 @@ body {
     float: center;
     margin:20px;
 }
-
+#user{
+    display: center;
+}
 .userphoto{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     float: center;
     margin:20px;
