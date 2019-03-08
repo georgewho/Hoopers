@@ -11,7 +11,7 @@ p {
 body {
     padding-top: 50px;
     overscroll-behavior-y: none;
-    background-color:#F4F4F4;
+    background-color: #F4F4F4;
 }
 
 col {
@@ -25,10 +25,9 @@ col {
     height: 67.6px;
 }
 
-.navbar-brand h2{
-  color:white;
+.navbar-brand h2 {
+    color: white;
 }
-
 
 
 /*bottom navbar elements*/
@@ -38,29 +37,32 @@ col {
     padding-left: 0px;
     padding-right: 0px;
 }
+
 .fa,
 .fas,
-.far{
-    color:white;
+.far {
+    color: white;
 }
-.active .fas{
-    color:#ffae44;
+
+.active .fas {
+    color: #ffae44;
 }
+
 
 /*game listings*/
 
 .game {
-   /* box-shadow: 0 8px 6px -6px black;*/
+    /* box-shadow: 0 8px 6px -6px black;*/
     overflow: hidden;
     color: black;
     background-color: #FEFEFE !important;
-    padding:20px;
+    padding: 20px;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.gamename{
-    font-size:28px;
+.gamename {
+    font-size: 28px;
     color: #444444;
 }
 
@@ -78,35 +80,22 @@ col {
 }
 
 .checkbox {
-    position:absolute;
-    margin:0;
+    position: absolute;
+    margin: 0;
     top: -85px;
     left: 310px;
     height: 25px;
     width: 25px;
 }
 
-.savegame{
-
+.savegame {
     display: inline-block;
-    padding-top:8px;
-
+    padding-top: 8px;
 }
+
 @media only screen and (max-device-width: 480px) {}
 
 #mainMap {
-    margin-top:10px;
-    height: 225px;
-}
-
-#mapArea1 {
-    height: 180px;
-}
-
-#mapArea2 {
-    height: 180px;
-}
-
-#mapArea3 {
-    height: 180px;
+    margin-top: 10px;
+    height: 400px;
 }
