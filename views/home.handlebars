@@ -98,22 +98,21 @@
 		{{#each games}}
 		<div class="game">
 			<div class="row">
-				<div class="col-8">
+				<div>
 					<p class="gamename">{{name}}</p>
 				</div>
-				<div class="col-4">
-					<p class="savegame">Save Game</p>
-				</div>
+		
 			</div>
-			<div class="row">
-				<div class="col-10">
+			<div class="row details">
+				
 					<h5>{{time}} &emsp; {{date}}</h5>
 					<h5>{{skill}} &emsp; {{players}}</h5>
-				</div>
+
 			</div>
 
 			<div class="checkboxcontainer">
-				<input class="checkbox" type="checkbox" id="{{id}}">
+					<p class="savegame">Save Game</p>
+					<input class="checkbox" type="checkbox" id="{{id}}">
 			</div>
 		</div>
 
