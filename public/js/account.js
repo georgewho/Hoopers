@@ -8,13 +8,14 @@ function initializePage() {
         if(localStorage.loggedIn === "loggedIn") {
         $('#name').html(localStorage.facebookname);
         $('.userphoto').attr("src", localStorage.picurl);
+        $('#icon').hide();
     }
     else if(user !== undefined && user !== null) {
-        $('#name').html(localStorage.facebookname);
         $('.userphoto').hide();
+        $('#name').html(localStorage.facebookname);
     }
     else {
-        $('#name').html("<h2>Hello User</h2>");
+        //$('#name').html("<h2>Hello User</h2>");
         $('.userphoto').hide();
     }
 }
