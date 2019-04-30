@@ -1,6 +1,6 @@
 Hoopers - Basketball Data Tracking & Pickup Game Finder
 ====
 
-“Master yourself, master the enemy.” Track your basketball stats and up your game. If you want to be the next Stephan Curry or don’t have any bb’s, basketball buddies, our app can help. Our app is for anyone interesting in improving or have fun playing ball. You can connect with basketball player and find games with each other while tracking your own stats. Wanna find a pickup game? SEARCH IT. Make an assist? Record it! Wanna see your progress? CHECK IT. 
+Hoopers is an app for tracking your basketball matches & to find pickup games in your area. Hoopers was created for our COGS 120 class at UCSD with the help of our instructor, Professor Scott Klemmer. We hope you enjoy using our app!
 
-We are Hoopers. 
+Find our app here: https://hoopers.herokuapp.com/
